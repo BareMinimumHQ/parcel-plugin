@@ -1,0 +1,14 @@
+{
+  "name": "parcel",
+  "description": "Parcel plugin for an agent-assisted job search",
+  "owner": {
+    "name": "Parcel"
+  },
+  "plugins": [
+    {
+      "name": "parcel",
+      "source": "./plugins/parcel",
+      "description": "Organize an authorized Parcel job search"
+    }
+  ]
+}
