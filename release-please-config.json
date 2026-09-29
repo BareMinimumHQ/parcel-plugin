@@ -3,7 +3,7 @@
   "packages": {
     ".": {
       "release-type": "simple",
-      "component": "parcel-plugin",
+      "include-component-in-tag": false,
       "extra-files": [
         "plugins/parcel/.codex-plugin/plugin.json",
         "plugins/parcel/.claude-plugin/plugin.json"
