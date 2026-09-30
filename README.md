@@ -1,5 +1,7 @@
 # Parcel plugin
 
+<img src="plugins/parcel/assets/logo.png" alt="Parcel" width="96" height="96" />
+
 [Parcel](https://workinparcel.com/) helps you organize an agent-assisted job search. This repository packages Parcel's skills and MCP connection for ChatGPT, Codex, Claude, and Claude Code. After installation, sign in to Parcel and approve the access you want to give your agent.
 
 ## ChatGPT
@@ -32,3 +34,7 @@ claude plugin install parcel@parcel
 ```
 
 Connect your Parcel account in your browser when prompted and review the requested access.
+
+## Marketplace branding
+
+The package includes the approved Parcel logo for marketplace listings and submission. See the [branding assets](plugins/parcel/assets/README.md) for icon files and provider-specific usage.

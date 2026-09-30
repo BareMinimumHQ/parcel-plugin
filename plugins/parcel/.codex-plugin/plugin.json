@@ -27,6 +27,8 @@
       "Show my current Parcel jobs and what needs attention next.",
       "Help me prepare Talking Points for an upcoming Interview in Parcel.",
       "Show the Quick review for my next Interview in Parcel."
-    ]
+    ],
+    "logo": "./assets/logo.png",
+    "composerIcon": "./assets/logo.png"
   }
 }
