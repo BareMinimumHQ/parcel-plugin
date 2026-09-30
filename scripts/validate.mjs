@@ -21,6 +21,17 @@ assert.equal(claude.name, "parcel");
 assert.equal(codex.version, claude.version);
 assert.equal(codex.license, "GPL-3.0-only");
 assert.equal(claude.license, codex.license);
+// Check the actual packaged icon, so a missing or unsuitable asset fails CI.
+for (const field of ["logo", "composerIcon"]) {
+  assert.equal(codex.interface[field], "./assets/logo.png");
+}
+const logo = readFileSync("plugins/parcel/assets/logo.png");
+assert.deepEqual(logo.subarray(0, 8), Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]));
+assert.equal(logo.toString("ascii", 12, 16), "IHDR");
+assert.equal(logo.readUInt32BE(16), 512);
+assert.equal(logo.readUInt32BE(20), 512);
+assert.ok(logo.length <= 5 * 1024 * 1024, "Logo must be at most 5 MiB");
+assert.ok(existsSync("plugins/parcel/assets/parcel-mark.svg"));
 assert.equal(codex.interface.defaultPrompt.length, 3);
 for (const prompt of codex.interface.defaultPrompt) {
   assert.ok(prompt.trim().length > 0, "Starter prompts must not be empty");
