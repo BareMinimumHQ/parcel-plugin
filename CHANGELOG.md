@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.1](https://github.com/BareMinimumHQ/parcel-plugin/compare/v0.3.0...v0.3.1) (2026-10-02)
+
+
+### Bug Fixes
+
+* release veracity gates and clearer plugin descriptions ([#9](https://github.com/BareMinimumHQ/parcel-plugin/issues/9)) ([554eb07](https://github.com/BareMinimumHQ/parcel-plugin/commit/554eb073c93e25eb7a27f19149e130dfe87e2877))
+
 ## [0.3.0](https://github.com/BareMinimumHQ/parcel-plugin/compare/v0.2.0...v0.3.0) (2026-10-02)
 
 
