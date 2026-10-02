@@ -34,15 +34,3 @@ claude plugin install parcel@parcel
 ```
 
 Connect your Parcel account in your browser when prompted and review the requested access.
-
-## Marketplace branding
-
-The package includes the approved Parcel logo for marketplace listings and submission. See the [branding assets](plugins/parcel/assets/README.md) for icon files and provider-specific usage.
-
-## Workflow skills
-
-The package includes workflows for capturing a Job posting, assessing a Match with evidence, preparing a Job Resume or Cover Letter, Company research, Talking Points, mock interviews, and next-session planning. Parcel's conversation viewers can request these skills explicitly. After a plugin release, update or resync the installed plugin to receive new skills; refreshing an MCP connection supplies tools, not skills. A connector-only installation can read and show Parcel data but does not supply these workflow instructions.
-
-Each workflow reads current context, proposes work for review, and uses bounded MCP operations only after the person authorizes saving. Mock interviews keep the live conversation in the provider and save reviewed feedback rather than a transcript. Viewer button clicks request a workflow; they do not prove that research or saving is complete.
-
-Resume, Cover Letter, and Interview response preparation require an independent veracity review of the final draft against the person's Career Profile and supplied sources. The host should use a cheap, fast read-only subagent. Unsupported claims must be resolved before the material is treated as ready; a host without subagent support reports the gate as unavailable and leaves the draft unverified.
