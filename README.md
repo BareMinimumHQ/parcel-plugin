@@ -38,3 +38,9 @@ Connect your Parcel account in your browser when prompted and review the request
 ## Marketplace branding
 
 The package includes the approved Parcel logo for marketplace listings and submission. See the [branding assets](plugins/parcel/assets/README.md) for icon files and provider-specific usage.
+
+## Workflow skills
+
+The package includes workflows for capturing a Job posting, assessing a Match with evidence, preparing a Job Resume or Cover Letter, Company research, Talking Points, mock interviews, and next-session planning. Parcel's conversation viewers can request these skills explicitly. After a plugin release, update or resync the installed plugin to receive new skills; refreshing an MCP connection supplies tools, not skills. A connector-only installation can read and show Parcel data but does not supply these workflow instructions.
+
+Each workflow reads current context, proposes work for review, and uses bounded MCP operations only after the person authorizes saving. Mock interviews keep the live conversation in the provider and save reviewed feedback rather than a transcript. Viewer button clicks request a workflow; they do not prove that research or saving is complete.

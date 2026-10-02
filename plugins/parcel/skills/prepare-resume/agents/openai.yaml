@@ -1,0 +1,10 @@
+interface:
+  display_name: "Prepare Resume"
+  short_description: "Prepare and review Parcel work"
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "parcel"
+      description: "Read and update authorized Parcel job-search information"
+      transport: "streamable_http"
+      url: "https://workinparcel.com/mcp"
