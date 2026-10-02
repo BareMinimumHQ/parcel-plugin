@@ -2,7 +2,7 @@
 
 <img src="plugins/parcel/assets/logo.png" alt="Parcel" width="96" height="96" />
 
-[Parcel](https://workinparcel.com/) keeps your job search in one place. Compare roles, tailor resumes and cover letters, research companies, and practise interviews with your connected assistant. This repository packages Parcel's skills and MCP connection for ChatGPT, Codex, Claude, and Claude Code. After installation, sign in to Parcel and approve the access you want to give your agent.
+[Parcel](https://workinparcel.com/) keeps your job search in one place. Compare roles, tailor resumes and cover letters, research companies, and practise interviews with your connected assistant. Install Parcel in ChatGPT, Codex, Claude, or Claude Code using the instructions below. After installation, sign in to Parcel and choose the access you want to give your assistant.
 
 ## ChatGPT
 
