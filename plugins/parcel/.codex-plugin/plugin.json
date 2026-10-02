@@ -1,7 +1,7 @@
 {
   "name": "parcel",
   "version": "0.3.0",
-  "description": "Organize an agent-assisted job search in Parcel.",
+  "description": "Keep your job search in one place. Compare roles, tailor resumes and cover letters, research companies, and practise interviews with your connected assistant.",
   "author": {
     "name": "Parcel"
   },
@@ -12,14 +12,10 @@
   "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "Parcel",
-    "shortDescription": "Keep your job search organized",
-    "longDescription": "Work with the profile, preferences, jobs, documents, interviews, and notes you authorize in Parcel.",
+    "longDescription": "A job search creates a lot to keep track of: roles, requirements, application documents, company research, and interview preparation. Parcel keeps that work together, so you can pick up where you left off. Use your connected assistant to compare jobs with your preferences, tailor resumes and cover letters, prepare talking points, and run mock interviews. View your saved work directly in the conversation, with Parcel as the shared workspace behind it.",
     "developerName": "Parcel",
     "category": "Productivity",
-    "capabilities": [
-      "Read",
-      "Write"
-    ],
+    "capabilities": ["Read", "Write"],
     "websiteURL": "https://workinparcel.com/",
     "privacyPolicyURL": "https://workinparcel.com/privacy",
     "termsOfServiceURL": "https://workinparcel.com/terms",

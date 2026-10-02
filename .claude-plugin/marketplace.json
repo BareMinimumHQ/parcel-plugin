@@ -1,6 +1,6 @@
 {
   "name": "parcel",
-  "description": "Parcel plugin for an agent-assisted job search",
+  "description": "Keep your job search in one place. Compare roles, tailor resumes and cover letters, research companies, and practise interviews with your connected assistant.",
   "owner": {
     "name": "Parcel"
   },
@@ -8,7 +8,7 @@
     {
       "name": "parcel",
       "source": "./plugins/parcel",
-      "description": "Organize an authorized Parcel job search"
+      "description": "Keep your job search in one place. Compare roles, tailor resumes and cover letters, research companies, and practise interviews with your connected assistant."
     }
   ]
 }
