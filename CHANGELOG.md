@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.1](https://github.com/BareMinimumHQ/parcel-plugin/compare/v0.4.0...v0.4.1) (2026-10-03)
+
+
+### Bug Fixes
+
+* clarify PDF saves and local upload preparation ([#18](https://github.com/BareMinimumHQ/parcel-plugin/issues/18)) ([9cf870e](https://github.com/BareMinimumHQ/parcel-plugin/commit/9cf870e7545135242acdb481f75a011d6bffd62e))
+
 ## [0.4.0](https://github.com/BareMinimumHQ/parcel-plugin/compare/v0.3.3...v0.4.0) (2026-10-03)
 
 
