@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.2](https://github.com/BareMinimumHQ/parcel-plugin/compare/v0.4.1...v0.4.2) (2026-10-03)
+
+
+### Bug Fixes
+
+* **skills:** open saved PDFs by document ID ([#20](https://github.com/BareMinimumHQ/parcel-plugin/issues/20)) ([40a110f](https://github.com/BareMinimumHQ/parcel-plugin/commit/40a110f56ae65a3a3e4343376d70cac792bf7fe8))
+
 ## [0.4.1](https://github.com/BareMinimumHQ/parcel-plugin/compare/v0.4.0...v0.4.1) (2026-10-03)
 
 
