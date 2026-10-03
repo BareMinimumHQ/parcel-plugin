@@ -113,7 +113,7 @@ for (const prompt of codex.interface.defaultPrompt) {
 assert.equal(mcp.mcpServers.parcel.type, "http");
 assert.equal(mcp.mcpServers.parcel.url, "https://workinparcel.com/mcp");
 assert.equal(Object.keys(mcp.mcpServers).length, 1);
-assert.ok(existsSync(packaged("skills/organize-job-search/SKILL.md")));
+assert.ok(existsSync(packaged("skills/parcel/SKILL.md")));
 for (const name of readdirSync(packaged("skills"))) {
   const skill = readFileSync(packaged(`skills/${name}/SKILL.md`), "utf8");
   const dependency = readFileSync(
@@ -168,7 +168,8 @@ assert.ok(!existsSync(packaged(".app.json")));
 assert.equal(portableMcp.mcpServers.parcel.type, "streamable-http");
 assert.equal(portableMcp.mcpServers.parcel.url, mcp.mcpServers.parcel.url);
 assert.equal(Object.keys(portableMcp.mcpServers).length, 1);
-assert.equal(readdirSync(packaged("skills")).length, 8);
+assert.equal(readdirSync(packaged("skills")).length, 1);
+assert.equal(readdirSync(packaged("skills/parcel/references")).length, 8);
 for (const prompt of codex.interface.defaultPrompt)
   assert.ok(prompt.length <= 128 && !prompt.includes("\n"));
 const { review, publication } = portable.extensions["com.openai"];

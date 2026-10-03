@@ -1,7 +1,7 @@
 interface:
-  display_name: "Assess match"
-  short_description: "Compare a role with your job preferences"
-  default_prompt: "Help me assess how a saved role matches my job preferences."
+  display_name: "Parcel"
+  short_description: "Organize your job search in Parcel"
+  default_prompt: "Use $parcel to review my saved jobs and help me choose what to work on next."
 dependencies:
   tools:
     - type: "mcp"
