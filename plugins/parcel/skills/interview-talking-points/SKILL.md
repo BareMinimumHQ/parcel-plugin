@@ -5,6 +5,8 @@ description: Use when a person asks what to explain, prepare, or practise for an
 
 # Interview Talking Points
 
+Read and follow the [shared Parcel behavior](../../references/behavior.md) throughout this workflow.
+
 Use the `parcel` MCP tools to find the Job and read its Posting, Match, current Resume and Cover Letter, Career Profile, authorized Notes, Company research, and existing Talking Points. Read the collection revision and limits before changing anything.
 
 Map the role's important requirements to specific truthful evidence from the Career Profile or authoritative source Resume; ask when sources conflict. Use saved Job status and Notes for application context, not as evidence of company facts. Prioritize three to five differentiators, with concrete experience, outcome, and relevance. Surface substantive gaps tactfully and give an honest framing strategy. Distinguish transferable capability from the absence of required experience; never invent metrics, ownership, technologies, or expertise.

@@ -5,6 +5,8 @@ description: Use when a person asks to prepare, tailor, create, or revise a Job 
 
 # Prepare a Job Resume
 
+Read and follow the [shared Parcel behavior](../../references/behavior.md) throughout this workflow.
+
 Use the `parcel` MCP tools to read the Job, Saved Job Posting, current Job Resume, Career Profile, and relevant Account Resumes. Use supported experience only. If there is no usable source, ask for the person's experience or a source Resume. Do not invent employment, dates, qualifications, achievements, metrics, or skills. Distinguish the person's evidence from suggestions that need confirmation.
 
 Choose a starting point with the person: retain an existing Job Resume, create a blank structured Job Resume, or copy an Account Resume. Account Resumes and Job Resumes are independent. Never alter an Account Resume as an incidental step in tailoring a Job Resume. Copying a source replaces the Job Resume and needs explicit approval when saved work already exists. Uploaded PDFs are immutable content; do not pretend their fields can be edited. If a structured replacement is needed, use the discovered create/copy operations and explain the proposed replacement before saving.
