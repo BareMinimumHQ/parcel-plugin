@@ -16,7 +16,7 @@ Your authorized assistant can read the Parcel information covered by the scopes 
 
 Review [Parcel's privacy policy](https://workinparcel.com/privacy) and [terms](https://workinparcel.com/terms). Use Account settings on the Parcel website to revoke a connection or delete your account. Deletion does not promise immediate removal from provider conversations, logs, or backups. Contact [support](https://workinparcel.com/support) for help.
 
-This plugin contains eight workflows and connects to Parcel's hosted OAuth MCP server. It does not run a local server, submit applications, contact employers, guarantee an offer, or perform account deletion from the conversation. Embedded views depend on the host; saved data remains available through the tools when a view is unavailable.
+This plugin provides one Parcel skill with eight workflows and connects to Parcel's hosted OAuth MCP server. It does not run a local server, submit applications, contact employers, guarantee an offer, or perform account deletion from the conversation. Embedded views depend on the host; saved data remains available through the tools when a view is unavailable.
 
 Licensed under [GPL-3.0-only](LICENSE).
 

@@ -1,12 +1,4 @@
----
-name: capture-job-posting
-description: Use when a person asks to add a Job from a posting URL or description, or capture or update the posting and supported details for an existing Job in Parcel.
-compatibility: Requires an authorized Parcel MCP connection. Browsing and independent reviewer dispatch depend on the host.
----
-
 # Capture a Job posting
-
-Read and follow the [shared Parcel behavior](../../references/behavior.md) throughout this workflow.
 
 Ask for the posting URL or pasted description when it is missing. Use the `parcel` MCP tools to identify the intended existing Job, or confirm that a new Job is wanted. Read current Job details and Saved Job Posting before proposing a change. Search for a possible duplicate before creating a new Job; ask when the intended Job is unclear.
 
@@ -14,6 +6,6 @@ Obtain the source yourself with available browsing tools; Parcel does not fetch 
 
 Prefer the employer's original posting over an aggregator when both are available. Check whether the listing is active and report closed, filled, expired, or unavailable sources. Do not silently change a saved Job's status because the external listing closed. Keep the stated compensation range, currency, period, and location restrictions clear; an upper bound alone is not a lower bound, and 'remote' may have geographic eligibility limits. Do not guess ambiguous currency or silently convert compensation. Report unresolved details for review. Capturing a posting preserves evidence; it does not declare that the Job passes the person's Filters.
 
-Show the proposed Job details and capture for review. Do not create or update Parcel until the person authorizes the proposed changes. For a new Job, call `create_job`, then use its returned Job ID and revision for `save_job_posting`. For an existing Job, use `update_job` only for approved metadata changes, read the resulting current revision, then call `save_job_posting`. Capture saves a new immutable posting and advances its current pointer; it does not revise a Match automatically. Follow the discovered schemas rather than inventing argument names. Distinguish a Job created successfully from a posting capture that failed.
+Show the proposed Job details and capture for review. Do not create or update Parcel until the person authorizes the proposed changes. For a new Job, include the initial Posting in `create_job` when available; use `update_job_posting` only for a later or separate capture. For an existing Job, use `update_job` only for approved metadata changes, use the returned current revision, then call `update_job_posting`. Capture saves a new immutable posting and advances its current pointer; it does not revise a Match automatically. Follow the discovered schemas rather than inventing argument names. Distinguish a Job created successfully from a posting capture that failed.
 
 Use a fresh UUID `operationId` for each logical write; retry an uncertain write only with its exact arguments and original key. On a stale revision, read again and reconcile with the person. Never overwrite concurrent work or claim a successful save without a confirmed result. Do not apply externally or change Job status merely because a posting was added.
