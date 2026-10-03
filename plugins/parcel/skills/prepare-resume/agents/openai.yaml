@@ -1,6 +1,7 @@
 interface:
-  display_name: "Prepare Resume"
-  short_description: "Prepare and review Parcel work"
+  display_name: "Prepare resume"
+  short_description: "Draft a resume grounded in your experience"
+  default_prompt: "Help me prepare a resume for a saved job in Parcel."
 dependencies:
   tools:
     - type: "mcp"

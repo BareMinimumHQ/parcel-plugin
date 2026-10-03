@@ -3,6 +3,9 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+concurrency:
+  group: parcel-release-${{ github.ref }}
+  cancel-in-progress: false
 permissions:
   contents: write
   pull-requests: write
@@ -11,7 +14,76 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: googleapis/release-please-action@v4
+        id: release
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           config-file: release-please-config.json
           manifest-file: .release-please-manifest.json
+      - name: Locate release pull request
+        if: steps.release.outputs.prs_created == 'true'
+        id: release-pr
+        uses: actions/github-script@v7
+        env:
+          RELEASE_PR: ${{ steps.release.outputs.pr }}
+        with:
+          script: |
+            const candidate = JSON.parse(process.env.RELEASE_PR);
+            const { data: pr } = await github.rest.pulls.get({
+              ...context.repo, pull_number: candidate.number,
+            });
+            const repository = `${context.repo.owner}/${context.repo.repo}`;
+            if (pr.state !== 'open' || pr.head.repo.full_name !== repository ||
+                !pr.head.ref.startsWith('release-please--')) {
+              throw new Error('Expected an open same-repository Release Please branch');
+            }
+            core.setOutput('branch', pr.head.ref);
+      - uses: actions/checkout@v4
+        if: steps.release.outputs.prs_created == 'true'
+        with:
+          ref: ${{ steps.release-pr.outputs.branch }}
+      - uses: actions/setup-node@v4
+        if: steps.release.outputs.prs_created == 'true'
+        with:
+          node-version: 22
+      - name: Generate and validate release PR manifests
+        if: steps.release.outputs.prs_created == 'true'
+        run: |
+          node scripts/sync-manifests.mjs --write
+          node scripts/validate.mjs
+          node --test scripts/sync-manifests.test.mjs
+          python3 -m unittest discover -s scripts -p 'test_*.py'
+          python3 scripts/package.py
+          npm exec --yes --package=@anthropic-ai/claude-code@2.1.282 -- claude plugin validate .
+          npm exec --yes --package=@anthropic-ai/claude-code@2.1.282 -- claude plugin validate ./plugins/parcel
+      - name: Update generated manifests in release PR
+        if: steps.release.outputs.prs_created == 'true'
+        env:
+          RELEASE_BRANCH: ${{ steps.release-pr.outputs.branch }}
+        run: |
+          git add plugins/parcel/.codex-plugin/plugin.json plugins/parcel/.claude-plugin/plugin.json plugins/parcel/.mcp.json .agents/plugins/marketplace.json .claude-plugin/marketplace.json
+          if ! git diff --cached --quiet; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit -m 'chore: regenerate release plugin manifests'
+            git push origin "HEAD:refs/heads/$RELEASE_BRANCH"
+          fi
+      - uses: actions/checkout@v4
+        if: steps.release.outputs.release_created == 'true'
+        with:
+          ref: ${{ steps.release.outputs.tag_name }}
+      - uses: actions/setup-node@v4
+        if: steps.release.outputs.release_created == 'true'
+        with:
+          node-version: 22
+      - name: Build and attach inspected release package
+        if: steps.release.outputs.release_created == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RELEASE_TAG: ${{ steps.release.outputs.tag_name }}
+        run: |
+          node scripts/sync-manifests.mjs --write
+          git diff --exit-code -- plugins/parcel/.codex-plugin/plugin.json plugins/parcel/.claude-plugin/plugin.json plugins/parcel/.mcp.json .agents/plugins/marketplace.json .claude-plugin/marketplace.json
+          node --test scripts/sync-manifests.test.mjs
+          python3 -m unittest discover -s scripts -p 'test_*.py'
+          python3 scripts/package.py --tag "$RELEASE_TAG"
+          gh release upload "$RELEASE_TAG" dist/*

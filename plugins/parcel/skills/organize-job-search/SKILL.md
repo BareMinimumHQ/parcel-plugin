@@ -1,6 +1,7 @@
 ---
 name: organize-job-search
 description: Use when a person asks to review, organize, or update their Parcel job search, including jobs, matches, documents, interviews, and notes.
+compatibility: Requires an authorized Parcel MCP connection. Browsing and independent reviewer dispatch depend on the host.
 ---
 
 # Organize a job search in Parcel

@@ -2,11 +2,19 @@
   "name": "parcel",
   "displayName": "Parcel",
   "version": "0.4.2",
-  "description": "Keep your job search in one place. Compare roles, tailor resumes and cover letters, research companies, and practise interviews with your connected assistant.",
+  "description": "Organize your job search. Compare roles, tailor resumes and cover letters, research companies, and practise interviews with your connected assistant.",
   "author": {
-    "name": "Parcel"
+    "name": "Simon Ho",
+    "email": "contact@workinparcel.com",
+    "url": "https://workinparcel.com/"
   },
   "homepage": "https://workinparcel.com/",
   "repository": "https://github.com/BareMinimumHQ/parcel-plugin",
-  "license": "GPL-3.0-only"
+  "license": "GPL-3.0-only",
+  "keywords": ["job-search", "resume", "cover-letter", "interview", "career"],
+  "icon": "./assets/logo-light.svg",
+  "documentationUrl": "https://github.com/BareMinimumHQ/parcel-plugin/tree/main/plugins/parcel",
+  "supportUrl": "https://workinparcel.com/support",
+  "privacyPolicyUrl": "https://workinparcel.com/privacy",
+  "termsOfServiceUrl": "https://workinparcel.com/terms"
 }

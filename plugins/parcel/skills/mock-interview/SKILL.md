@@ -1,6 +1,7 @@
 ---
 name: mock-interview
 description: Use when a person asks to practise an Interview by conversation or voice, or asks to save feedback from a completed practice session in Parcel.
+compatibility: Requires an authorized Parcel MCP connection. Browsing and independent reviewer dispatch depend on the host.
 ---
 
 # Mock Interview and Practice result

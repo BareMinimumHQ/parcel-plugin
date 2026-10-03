@@ -1,10 +1,3 @@
----
-agent:
-  instruction: Keep general Parcel behavior aligned across packaged skills, MCP server instructions, and the maintainer workflow contract.
-  on-change:
-    - plugins/parcel/skills/**
----
-
 # Shared Parcel behavior
 
 Always offer a next useful action in responses about Parcel work. Keep the offer brief and specific to the person's request and the current saved state. Prefer one concrete follow-up over a menu or a generic offer of more help. An offer does not authorize execution, saving, replacement, publication, or an external action, and does not add a confirmation step to already authorized work.

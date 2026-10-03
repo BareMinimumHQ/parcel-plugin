@@ -1,6 +1,7 @@
 ---
 name: prepare-resume
 description: Use when a person asks to prepare, tailor, create, or revise a Job Resume in Parcel.
+compatibility: Requires an authorized Parcel MCP connection. Browsing and independent reviewer dispatch depend on the host.
 ---
 
 # Prepare a Job Resume

@@ -1,6 +1,7 @@
 interface:
-  display_name: "Prepare Cover Letter"
-  short_description: "Prepare and review Parcel work"
+  display_name: "Prepare cover letter"
+  short_description: "Draft a letter grounded in your experience"
+  default_prompt: "Help me prepare a cover letter for a saved job in Parcel."
 dependencies:
   tools:
     - type: "mcp"

@@ -1,14 +1,15 @@
 {
   "name": "parcel",
-  "description": "Keep your job search in one place. Compare roles, tailor resumes and cover letters, research companies, and practise interviews with your connected assistant.",
+  "description": "Organize your job search. Compare roles, tailor resumes and cover letters, research companies, and practise interviews with your connected assistant.",
   "owner": {
-    "name": "Parcel"
+    "name": "Simon Ho",
+    "email": "contact@workinparcel.com"
   },
   "plugins": [
     {
       "name": "parcel",
       "source": "./plugins/parcel",
-      "description": "Keep your job search in one place. Compare roles, tailor resumes and cover letters, research companies, and practise interviews with your connected assistant."
+      "description": "Organize your job search. Compare roles, tailor resumes and cover letters, research companies, and practise interviews with your connected assistant."
     }
   ]
 }

@@ -1,6 +1,7 @@
 ---
 name: interview-talking-points
 description: Use when a person asks what to explain, prepare, or practise for an Interview tied to a Job in Parcel.
+compatibility: Requires an authorized Parcel MCP connection. Browsing and independent reviewer dispatch depend on the host.
 ---
 
 # Interview Talking Points
