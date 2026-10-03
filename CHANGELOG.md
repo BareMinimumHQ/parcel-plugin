@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://github.com/BareMinimumHQ/parcel-plugin/compare/v0.4.2...v0.5.0) (2026-10-03)
+
+
+### Features
+
+* prepare portable plugin directory releases ([#22](https://github.com/BareMinimumHQ/parcel-plugin/issues/22)) ([90934d9](https://github.com/BareMinimumHQ/parcel-plugin/commit/90934d94b30aa1d6d000016511578f6a4f6c2048))
+
 ## [0.4.2](https://github.com/BareMinimumHQ/parcel-plugin/compare/v0.4.1...v0.4.2) (2026-10-03)
 
 
