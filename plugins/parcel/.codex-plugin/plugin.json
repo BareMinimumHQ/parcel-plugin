@@ -15,10 +15,7 @@
     "longDescription": "A job search creates a lot to keep track of: roles, requirements, application documents, company research, and interview preparation. Parcel keeps that work together, so you can pick up where you left off. Use your connected assistant to compare jobs with your preferences, tailor resumes and cover letters, prepare talking points, and run mock interviews. View your saved work directly in the conversation, with Parcel as the shared workspace behind it.",
     "developerName": "Parcel",
     "category": "Productivity",
-    "capabilities": [
-      "Read",
-      "Write"
-    ],
+    "capabilities": ["Read", "Write"],
     "websiteURL": "https://workinparcel.com/",
     "privacyPolicyURL": "https://workinparcel.com/privacy",
     "termsOfServiceURL": "https://workinparcel.com/terms",
@@ -28,6 +25,7 @@
       "Show the Quick review for my next Interview in Parcel."
     ],
     "logo": "./assets/logo.png",
-    "composerIcon": "./assets/logo.png"
+    "composerIcon": "./assets/logo.png",
+    "shortDescription": "Keep your job search together"
   }
 }
