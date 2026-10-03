@@ -1,6 +1,6 @@
 {
   "name": "parcel",
-  "version": "0.4.2",
+  "version": "0.5.0",
   "description": "Organize your job search. Compare roles, tailor resumes and cover letters, research companies, and practise interviews with your connected assistant.",
   "author": {
     "name": "Simon Ho",
@@ -10,7 +10,13 @@
   "homepage": "https://workinparcel.com/",
   "repository": "https://github.com/BareMinimumHQ/parcel-plugin",
   "license": "GPL-3.0-only",
-  "keywords": ["job-search", "resume", "cover-letter", "interview", "career"],
+  "keywords": [
+    "job-search",
+    "resume",
+    "cover-letter",
+    "interview",
+    "career"
+  ],
   "skills": "./skills/",
   "mcpServers": "./.mcp.json",
   "interface": {
