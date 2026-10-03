@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.2](https://github.com/BareMinimumHQ/parcel-plugin/compare/v0.3.1...v0.3.2) (2026-10-03)
+
+
+### Bug Fixes
+
+* **plugin:** align metadata and draft review fallback ([#12](https://github.com/BareMinimumHQ/parcel-plugin/issues/12)) ([b41260d](https://github.com/BareMinimumHQ/parcel-plugin/commit/b41260d051e13c2f44b36696cee9840eabaebb9e))
+
 ## [0.3.1](https://github.com/BareMinimumHQ/parcel-plugin/compare/v0.3.0...v0.3.1) (2026-10-02)
 
 
