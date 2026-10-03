@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.3](https://github.com/BareMinimumHQ/parcel-plugin/compare/v0.3.2...v0.3.3) (2026-10-03)
+
+
+### Bug Fixes
+
+* **plugin:** guide every workflow to a next useful action ([#14](https://github.com/BareMinimumHQ/parcel-plugin/issues/14)) ([d01a898](https://github.com/BareMinimumHQ/parcel-plugin/commit/d01a89848772dcb1fb7c61dcf7263069884d20b1))
+
 ## [0.3.2](https://github.com/BareMinimumHQ/parcel-plugin/compare/v0.3.1...v0.3.2) (2026-10-03)
 
 
