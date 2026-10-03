@@ -5,6 +5,8 @@ description: Use when a person asks to review, organize, or update their Parcel 
 
 # Organize a job search in Parcel
 
+Read and follow the [shared Parcel behavior](../../references/behavior.md) throughout this workflow.
+
 Use the `parcel` MCP tools for current account information. Read the relevant record before changing it, use the server-assigned identifiers and revision guards returned by tools, and summarize the saved result. If a tool is unavailable or authorization has expired, ask the person to reconnect Parcel; do not infer private data from the skill or claim an unsaved change succeeded.
 
 The person chooses which jobs to pursue. Parcel holds the workspace; it does not submit applications. Keep prepared text, saved documents, and external actions distinct. Ask before replacing existing content when the intended change is unclear. Do not treat a Job marked Applied as proof of an external submission.

@@ -5,6 +5,8 @@ description: Use when a person asks to assess a Parcel Job against their Job Pre
 
 # Assess a Match
 
+Read and follow the [shared Parcel behavior](../../references/behavior.md) throughout this workflow.
+
 Use the `parcel` MCP tools to read the current Job, Saved Job Posting, Job Preferences, and Match. If a posting or meaningful preferences are missing, explain what is needed before scoring. Copy Priority IDs and current revisions from reads; never invent record IDs. An existing Match uses captured posting and preference snapshots: assess those sources, and explain changed-source indicators before proposing a rebase. Do not silently rebase or clear saved assessments.
 
 Assess each configured Filter using the discovered outcome enum. Compare its preference value with explicit posting evidence; distinguish no match, not stated, and unclear. Add a concise `rationale` when it explains an outcome or uncertainty. Do not infer compensation, location, seniority, or working arrangements without support.

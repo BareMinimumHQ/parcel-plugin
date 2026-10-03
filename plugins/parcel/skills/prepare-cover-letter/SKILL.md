@@ -5,6 +5,8 @@ description: Use when a person asks to draft, prepare, create, or revise a Cover
 
 # Prepare a Cover Letter
 
+Read and follow the [shared Parcel behavior](../../references/behavior.md) throughout this workflow.
+
 Use the `parcel` MCP tools to read the Job, Saved Job Posting, current Cover Letter, relevant Career Profile and Job Resume. Use Company research when useful and distinguish sourced facts from inference. Ask for missing material that prevents a credible letter. Do not invent personal experience, achievements, company facts, contact names, addresses, or reasons for interest.
 
 Read the role before choosing company context. Prefer a few specific links between the role's needs and truthful experience, outcomes and motivation. Use current sourced company information only when it helps explain that connection; do not pad the letter with company boilerplate or praise. Write the letter in the person's first-person voice and keep wording natural. Ask for genuine motivation when it is missing, rather than inventing it.

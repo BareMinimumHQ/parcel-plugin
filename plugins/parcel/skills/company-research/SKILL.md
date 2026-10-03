@@ -5,6 +5,8 @@ description: Use when a person asks to research a company, team, product, or cus
 
 # Company research for an Interview
 
+Read and follow the [shared Parcel behavior](../../references/behavior.md) throughout this workflow.
+
 Use the `parcel` MCP tools to identify the Job and read its current Posting, Company research, relevant links, collection revision, and limits. Gather only sources you can access. Separate confirmed facts, inferences, and open questions, with labeled HTTP(S) links. Do not claim Parcel verified the sources.
 
 Read the role before researching the company so the work has a clear focus. Prefer the company site, product and engineering blogs, investor or earnings materials when relevant, press releases, and recent public leadership statements. Use independent reporting to add material context or corroborate important claims. Identify what the company offers, whom it serves, its business model or stage when relevant, and the product or technical themes the role may touch.
