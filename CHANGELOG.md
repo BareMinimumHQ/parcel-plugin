@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0](https://github.com/BareMinimumHQ/parcel-plugin/compare/v0.3.3...v0.4.0) (2026-10-03)
+
+
+### Features
+
+* guide account identity and attached Resume saves ([#16](https://github.com/BareMinimumHQ/parcel-plugin/issues/16)) ([ef17464](https://github.com/BareMinimumHQ/parcel-plugin/commit/ef174648912828a8f0a1e6997f0f18fdfc094317))
+
 ## [0.3.3](https://github.com/BareMinimumHQ/parcel-plugin/compare/v0.3.2...v0.3.3) (2026-10-03)
 
 
