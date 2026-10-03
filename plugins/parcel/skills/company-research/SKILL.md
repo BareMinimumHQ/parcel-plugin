@@ -1,6 +1,7 @@
 ---
 name: company-research
 description: Use when a person asks to research a company, team, product, or customer for a specific Job in Parcel.
+compatibility: Requires an authorized Parcel MCP connection. Browsing and independent reviewer dispatch depend on the host.
 ---
 
 # Company research for an Interview

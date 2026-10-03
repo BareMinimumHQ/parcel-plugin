@@ -1,6 +1,7 @@
 ---
 name: prepare-cover-letter
 description: Use when a person asks to draft, prepare, create, or revise a Cover Letter for a Job in Parcel.
+compatibility: Requires an authorized Parcel MCP connection. Browsing and independent reviewer dispatch depend on the host.
 ---
 
 # Prepare a Cover Letter

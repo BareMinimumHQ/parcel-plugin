@@ -1,6 +1,7 @@
 ---
 name: capture-job-posting
 description: Use when a person asks to add a Job from a posting URL or description, or capture or update the posting and supported details for an existing Job in Parcel.
+compatibility: Requires an authorized Parcel MCP connection. Browsing and independent reviewer dispatch depend on the host.
 ---
 
 # Capture a Job posting

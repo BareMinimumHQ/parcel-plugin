@@ -1,6 +1,7 @@
 interface:
-  display_name: "Capture Job Posting"
-  short_description: "Prepare and review Parcel work"
+  display_name: "Capture job posting"
+  short_description: "Save a posting and review its job details"
+  default_prompt: "Help me capture a job posting in Parcel."
 dependencies:
   tools:
     - type: "mcp"

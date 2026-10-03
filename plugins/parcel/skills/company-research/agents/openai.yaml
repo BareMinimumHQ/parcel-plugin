@@ -1,10 +1,11 @@
 interface:
-  display_name: 'Company Research'
-  short_description: 'Research an Interview in Parcel'
+  display_name: "Company research"
+  short_description: "Research an employer for your interview"
+  default_prompt: "Help me research the company for a saved job in Parcel."
 dependencies:
   tools:
-    - type: 'mcp'
-      value: 'parcel'
-      description: 'Read and update authorized Parcel job-search information'
-      transport: 'streamable_http'
-      url: 'https://workinparcel.com/mcp'
+    - type: "mcp"
+      value: "parcel"
+      description: "Read and update authorized Parcel job-search information"
+      transport: "streamable_http"
+      url: "https://workinparcel.com/mcp"

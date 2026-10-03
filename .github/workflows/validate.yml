@@ -18,3 +18,13 @@ jobs:
         run: |
           npm exec --yes --package=@anthropic-ai/claude-code@2.1.282 -- claude plugin validate .
           npm exec --yes --package=@anthropic-ai/claude-code@2.1.282 -- claude plugin validate ./plugins/parcel
+      - name: Test and inspect portable archive
+        run: |
+          node --test scripts/sync-manifests.test.mjs
+          python3 -m unittest discover -s scripts -p 'test_*.py'
+          python3 scripts/package.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: parcel-plugin-preview
+          path: dist/*
+          if-no-files-found: error

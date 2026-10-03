@@ -1,6 +1,7 @@
 ---
 name: assess-match
 description: Use when a person asks to assess a Parcel Job against their Job Preferences or create its Match.
+compatibility: Requires an authorized Parcel MCP connection. Browsing and independent reviewer dispatch depend on the host.
 ---
 
 # Assess a Match

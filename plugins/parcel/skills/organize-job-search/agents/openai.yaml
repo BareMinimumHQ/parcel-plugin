@@ -1,10 +1,11 @@
 interface:
-  display_name: 'Organize Job Search'
-  short_description: 'Review and update your Parcel jobs'
+  display_name: "Organize job search"
+  short_description: "Review your jobs and choose the next step"
+  default_prompt: "Help me organize my job search in Parcel."
 dependencies:
   tools:
-    - type: 'mcp'
-      value: 'parcel'
-      description: 'Read and update authorized Parcel job-search information'
-      transport: 'streamable_http'
-      url: 'https://workinparcel.com/mcp'
+    - type: "mcp"
+      value: "parcel"
+      description: "Read and update authorized Parcel job-search information"
+      transport: "streamable_http"
+      url: "https://workinparcel.com/mcp"
