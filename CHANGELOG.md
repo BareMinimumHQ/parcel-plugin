@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.0](https://github.com/BareMinimumHQ/parcel-plugin/compare/v0.5.0...v0.6.0) (2026-10-03)
+
+
+### Features
+
+* route Parcel workflows through a shared skill ([#24](https://github.com/BareMinimumHQ/parcel-plugin/issues/24)) ([3e99f0d](https://github.com/BareMinimumHQ/parcel-plugin/commit/3e99f0d0cd339a3cad072d299e52835577b137bc))
+
 ## [0.5.0](https://github.com/BareMinimumHQ/parcel-plugin/compare/v0.4.2...v0.5.0) (2026-10-03)
 
 
