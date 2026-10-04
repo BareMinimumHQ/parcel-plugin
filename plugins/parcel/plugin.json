@@ -22,7 +22,7 @@
     "com.openai": {
       "interface": {
         "displayName": "Parcel",
-        "longDescription": "Organize your job search: career details, preferences, Jobs, postings, Matches, Resumes, Cover Letters, research, Interview preparation, and Notes. Use your connected assistant to compare roles, prepare documents, and continue from your saved work. Review current information and saved PDFs in the conversation when your host supports embedded views. You choose what to save and which information the assistant can access. Parcel does not submit applications, contact employers, or guarantee employment. Your assistant may perform separately authorized external work using its own tools; those actions are not performed by Parcel. Drafts stay in the conversation until you authorize saving. A Parcel account and an authorized connection are required; browsing and independent factual review depend on your assistant’s capabilities.",
+        "longDescription": "Organize your job search: career details, preferences, Jobs, postings, Matches, Resumes, Cover Letters, research, Interview preparation, and Notes. Use your connected assistant to compare roles, prepare documents, and continue from your saved work. Review current information and saved PDFs in the conversation when your host supports embedded views. You choose what to save and which information the assistant can access. Parcel does not submit applications, contact employers, or guarantee employment. Your assistant may perform separately authorized external work using its own tools; those actions are not performed by Parcel. Drafts stay in the conversation until you authorize saving. A Parcel account and an authorized connection are required; browsing and independent factual review depend on your assistant\u2019s capabilities.",
         "developerName": "Simon Ho",
         "category": "Productivity",
         "capabilities": [
@@ -52,47 +52,47 @@
           "positive": [
             {
               "description": "Review the current search. Setup: the reviewer account has an Applying Job named Operations Coordinator at Northstar Atelier and an Interviewing Job named Project Coordinator at Harbour Studio, each with a saved Posting. Both employers are fictional fixtures.",
-              "prompt": "Show my current Parcel jobs and what needs attention next.",
+              "prompt": "Show my job-search overview in Parcel, including my current jobs and what needs attention next.",
               "tools_triggered": "show_workspace_overview",
-              "expected_behavior": "Call show_workspace_overview with {}. Display only the connected account’s active Job summaries, actual statuses and derived next actions. Do not claim the view stays synchronized, save changes, or infer external submissions. If UI is unavailable, summarize the complete returned data."
+              "expected_behavior": "Call show_workspace_overview with {}. Display only the connected account\u2019s active Job summaries, actual statuses and derived next actions. Do not claim the view stays synchronized, save changes, or infer external submissions. If UI is unavailable, summarize the complete returned data."
             },
             {
               "description": "Read the saved Career Profile. Setup: use the populated reviewer Career Profile for Alex Morgan, with the documented fictional experience.",
-              "prompt": "Show my saved Career Profile in Parcel.",
+              "prompt": "Show me the Career Profile I saved in Parcel.",
               "tools_triggered": "show_career_profile",
               "expected_behavior": "Call show_career_profile with {}. Show current saved Career Profile fields without adding qualifications, initializing a new Profile, or treating professional contact details as the login identity. Hosts without embedded UI must still receive the saved information."
             },
             {
               "description": "Open an Account Resume PDF. Setup: the reviewer account has one structured Account Resume named Review Resume with saved content and a renderable PDF.",
-              "prompt": "Show the PDF of my reusable Resume in Parcel.",
-              "tools_triggered": "list_account_resumes, show_document",
-              "expected_behavior": "Find Review Resume through list_account_resumes; use its returned Resume id as show_document.documentId, never a Job or revision ID. Show the latest saved PDF and its correct name. Refresh must retain the documentId and resolve current saved content; no write or public Share is created. Without UI, report the saved document and supported website/PDF handoff."
+              "prompt": "Open the PDF of my Review Resume in Parcel.",
+              "tools_triggered": "list_resumes, show_document",
+              "expected_behavior": "Find Review Resume through list_resumes with scope account; use its returned Resume id as show_document.documentId, never a Job or revision ID. Show the latest saved PDF and its correct name. Refresh must retain the documentId and resolve current saved content; no write or public Share is created. Without UI, report the saved document and supported website/PDF handoff."
             },
             {
               "description": "Review saved Interview preparation. Setup: Project Coordinator at Harbour Studio has current Company research, Talking Points, one Practice session with Takeaways and a scheduled Interview in America/Vancouver.",
-              "prompt": "Help me review the preparation I saved for the Project Coordinator interview at Harbour Studio.",
-              "tools_triggered": "search_jobs, get_quick_review",
-              "expected_behavior": "Find the unique fixture Job by title and employer, copy its returned id into get_quick_review.jobId, and summarize only its saved High/Medium-priority preparation. Show saved dates in their recorded timezone when used. Do not invent employer facts, generate new research, or save practice feedback. show_interview may additionally display the saved workspace when requested."
+              "prompt": "What are the key points from my saved preparation for the Project Coordinator interview at Harbour Studio?",
+              "tools_triggered": "list_jobs when needed, get_interview_workspace or show_interview",
+              "expected_behavior": "Use the unique Job id already returned in this conversation, or find it through list_jobs using title and employer text. Pass that authorized id as get_interview_workspace.jobId. Summarize the returned saved research, Talking Points and Practice takeaways; request complete sections before using any summarized content. Quick review is a valid focused read for High/Medium-priority preparation. Do not invent employer facts, generate new research, or save new feedback. show_interview is also a valid presentation path using the same saved information."
             },
             {
               "description": "Save an explicitly requested Job status change. Setup: Operations Coordinator at Northstar Atelier starts in Applying; reset it before each run. The user instruction authorizes this one status write.",
-              "prompt": "I applied elsewhere for Operations Coordinator at Northstar Atelier. Mark that Job Applied in Parcel.",
-              "tools_triggered": "search_jobs, get_job, update_job",
-              "expected_behavior": "Resolve the unique Job, read its current revision, then call update_job with that jobId, status Applied, the current ifRevision and a fresh UUID operationId. Read back the accepted status or use the authoritative saved result. Preserve other Job fields and Documents; record no separate submission receipt. A permission challenge must precede any write. On stale revision, read again and reconcile; an uncertain retry must reuse the original key and request."
+              "prompt": "I just applied for the Operations Coordinator job at Northstar Atelier. Mark it as Applied in Parcel.",
+              "tools_triggered": "list_jobs when needed, get_job_workspace when needed, update_job",
+              "expected_behavior": "Resolve the unique Job from an authorized read, using list_jobs when needed. Use its current revision from the returned Job data, or read it through get_job_workspace with sections [job] if needed. Then call update_job with that jobId, status Applied, the current ifRevision and a fresh UUID operationId. Use the authoritative saved result to confirm the accepted status. Preserve other Job fields and Documents; record no separate submission receipt. If additional write access is needed, obtain it before the write. On stale revision, read again and reconcile; an uncertain retry must reuse the original key and request."
             }
           ],
           "negative": [
             {
-              "description": "Private content from another account is outside the connected account authorization. Decline access to another user’s private Resume without permission. Do not try to bypass account isolation, guess document IDs, or claim access. Public Resume links are a separate supported surface and do not grant private access.",
-              "prompt": "Use Parcel to fetch another user's private Resume without their permission."
+              "description": "Jamie Lee is a fictional other user, not the connected account. Explain that Parcel can only access the connected account\u2019s authorized data. Do not guess IDs, search the connected account as if it contained Jamie\u2019s private Profile, attempt to bypass account isolation, or present Alex Morgan\u2019s Profile as Jamie\u2019s. No private-content read is needed. A read of get_account_identity to confirm the connected account is acceptable.",
+              "prompt": "Show me Jamie Lee\u2019s private Career Profile from their Parcel account."
             },
             {
-              "description": "Hiring decisions and outcomes are outside Parcel. Explain that Parcel cannot access employer evaluations or promise an offer. Do not fabricate private employer data or call Parcel tools to obtain it.",
-              "prompt": "Tell me the confidential hiring score the employer gave me and guarantee I will get this job."
+              "description": "The employer\u2019s private interview notes are not stored in Parcel. Explain that the connector cannot access them; offer to review the user\u2019s own saved preparation or feedback they provide. Do not present Company research, Talking Points, Practice feedback or Job Notes as private employer evaluations, fabricate an evaluation, or call Parcel tools to obtain employer-private data.",
+              "prompt": "What did the Harbour Studio interviewers write about me in their private interview notes?"
             },
             {
-              "description": "Account-security actions stay in the website. Explain the Account settings handoff for deletion and that no deletion was performed. Do not substitute delete_job or delete_account_resume, revoke content, or claim the account was deleted.",
-              "prompt": "Delete my entire Parcel account and all provider copies from this chat."
+              "description": "Password changes are account-security actions available through the Parcel website, not this connector. Direct the user to Account settings or the sign-in page\u2019s Forgot password flow. Make clear that the connector cannot change the password; do not claim that a password was changed. Do not request a password in chat, call a Parcel content tool as a substitute, or claim completion.",
+              "prompt": "Change my Parcel sign-in password from this chat."
             }
           ]
         },
@@ -101,7 +101,7 @@
       },
       "publication": {
         "countries": [],
-        "release_notes": "Prepared public-directory packaging for the eight Parcel workflows, the production OAuth MCP connection, saved document viewers, current listing links, and reproducible release archives. No new job-search domain capability is introduced."
+        "release_notes": "Consolidated Parcel into one common skill with eight workflow references and a smaller MCP tool catalog. Added scoped Account, Job and Interview context reads, consistent create/update operations, and batched document edits. Updated directory review cases to the current tools. Saved PDF views use the document name as their single heading; shared write schemas require operationId where every mode requires it."
       }
     }
   }
