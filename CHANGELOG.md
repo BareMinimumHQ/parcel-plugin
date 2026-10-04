@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.2](https://github.com/BareMinimumHQ/parcel-plugin/compare/v0.6.1...v0.6.2) (2026-10-04)
+
+
+### Bug Fixes
+
+* clarify Parcel directory listing descriptions ([#28](https://github.com/BareMinimumHQ/parcel-plugin/issues/28)) ([92a5596](https://github.com/BareMinimumHQ/parcel-plugin/commit/92a5596621b9d6f3967da3ac0622c4b49c5f46c5))
+
 ## [0.6.1](https://github.com/BareMinimumHQ/parcel-plugin/compare/v0.6.0...v0.6.1) (2026-10-04)
 
 
