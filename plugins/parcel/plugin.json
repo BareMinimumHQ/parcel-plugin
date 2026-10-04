@@ -11,13 +11,7 @@
   "homepage": "https://workinparcel.com/",
   "repository": "https://github.com/BareMinimumHQ/parcel-plugin",
   "license": "GPL-3.0-only",
-  "keywords": [
-    "job-search",
-    "resume",
-    "cover-letter",
-    "interview",
-    "career"
-  ],
+  "keywords": ["job-search", "resume", "cover-letter", "interview", "career"],
   "extensions": {
     "com.openai": {
       "interface": {
@@ -97,11 +91,12 @@
           ]
         },
         "commerce": false,
-        "commerce_description": "No purchase options are currently available. The plugin does not sell products or services, create checkout sessions, or process payments."
+        "commerce_description": "No purchase options are currently available. The plugin does not sell products or services, create checkout sessions, or process payments.",
+        "demo_recording_url": "https://drive.google.com/file/d/1Mdz0nVCU4HdK3fPlgY2cH6aRcxJY0_NN/view?usp=sharing"
       },
       "publication": {
         "countries": [],
-        "release_notes": "Updated the ChatGPT and Claude listing descriptions to explain what Parcel is and how it keeps a job search organized. No tool or workflow behavior changed."
+        "release_notes": "Added the trimmed review walkthrough URL required by the submission portal. No tool or workflow behavior changed."
       }
     }
   }
