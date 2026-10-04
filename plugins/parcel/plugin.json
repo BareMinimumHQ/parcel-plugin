@@ -11,13 +11,7 @@
   "homepage": "https://workinparcel.com/",
   "repository": "https://github.com/BareMinimumHQ/parcel-plugin",
   "license": "GPL-3.0-only",
-  "keywords": [
-    "job-search",
-    "resume",
-    "cover-letter",
-    "interview",
-    "career"
-  ],
+  "keywords": ["job-search", "resume", "cover-letter", "interview", "career"],
   "extensions": {
     "com.openai": {
       "interface": {
