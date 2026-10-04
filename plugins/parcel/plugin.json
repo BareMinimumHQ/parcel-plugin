@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "parcel",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "Organize your job search. Compare roles, tailor resumes and cover letters, research companies, and practise interviews with your connected assistant.",
   "author": {
     "name": "Simon Ho",
@@ -22,7 +22,7 @@
     "com.openai": {
       "interface": {
         "displayName": "Parcel",
-        "longDescription": "Organize your job search: career details, preferences, Jobs, postings, Matches, Resumes, Cover Letters, research, Interview preparation, and Notes. Use your connected assistant to compare roles, prepare documents, and continue from your saved work. Review current information and saved PDFs in the conversation when your host supports embedded views. You choose what to save and which information the assistant can access. Parcel does not submit applications, contact employers, or guarantee employment. Your assistant may perform separately authorized external work using its own tools; those actions are not performed by Parcel. Drafts stay in the conversation until you authorize saving. A Parcel account and an authorized connection are required; browsing and independent factual review depend on your assistant\u2019s capabilities.",
+        "longDescription": "Organize your job search: career details, preferences, Jobs, postings, Matches, Resumes, Cover Letters, research, Interview preparation, and Notes. Use your connected assistant to compare roles, prepare documents, and continue from your saved work. Review current information and saved PDFs in the conversation when your host supports embedded views. You choose what to save and which information the assistant can access. Parcel does not submit applications, contact employers, or guarantee employment. Your assistant may perform separately authorized external work using its own tools; those actions are not performed by Parcel. Drafts stay in the conversation until you authorize saving. A Parcel account and an authorized connection are required; browsing and independent factual review depend on your assistant’s capabilities.",
         "developerName": "Simon Ho",
         "category": "Productivity",
         "capabilities": [
@@ -54,7 +54,7 @@
               "description": "Review the current search. Setup: the reviewer account has an Applying Job named Operations Coordinator at Northstar Atelier and an Interviewing Job named Project Coordinator at Harbour Studio, each with a saved Posting. Both employers are fictional fixtures.",
               "prompt": "Show my job-search overview in Parcel, including my current jobs and what needs attention next.",
               "tools_triggered": "show_workspace_overview",
-              "expected_behavior": "Call show_workspace_overview with {}. Display only the connected account\u2019s active Job summaries, actual statuses and derived next actions. Do not claim the view stays synchronized, save changes, or infer external submissions. If UI is unavailable, summarize the complete returned data."
+              "expected_behavior": "Call show_workspace_overview with {}. Display only the connected account’s active Job summaries, actual statuses and derived next actions. Do not claim the view stays synchronized, save changes, or infer external submissions. If UI is unavailable, summarize the complete returned data."
             },
             {
               "description": "Read the saved Career Profile. Setup: use the populated reviewer Career Profile for Alex Morgan, with the documented fictional experience.",
@@ -83,15 +83,15 @@
           ],
           "negative": [
             {
-              "description": "Jamie Lee is a fictional other user, not the connected account. Explain that Parcel can only access the connected account\u2019s authorized data. Do not guess IDs, search the connected account as if it contained Jamie\u2019s private Profile, attempt to bypass account isolation, or present Alex Morgan\u2019s Profile as Jamie\u2019s. No private-content read is needed. A read of get_account_identity to confirm the connected account is acceptable.",
-              "prompt": "Show me Jamie Lee\u2019s private Career Profile from their Parcel account."
+              "description": "Jamie Lee is a fictional other user, not the connected account. Explain that Parcel can only access the connected account’s authorized data. Do not guess IDs, search the connected account as if it contained Jamie’s private Profile, attempt to bypass account isolation, or present Alex Morgan’s Profile as Jamie’s. No private-content read is needed. A read of get_account_identity to confirm the connected account is acceptable.",
+              "prompt": "Show me Jamie Lee’s private Career Profile from their Parcel account."
             },
             {
-              "description": "The employer\u2019s private interview notes are not stored in Parcel. Explain that the connector cannot access them; offer to review the user\u2019s own saved preparation or feedback they provide. Do not present Company research, Talking Points, Practice feedback or Job Notes as private employer evaluations, fabricate an evaluation, or call Parcel tools to obtain employer-private data.",
+              "description": "The employer’s private interview notes are not stored in Parcel. Explain that the connector cannot access them; offer to review the user’s own saved preparation or feedback they provide. Do not present Company research, Talking Points, Practice feedback or Job Notes as private employer evaluations, fabricate an evaluation, or call Parcel tools to obtain employer-private data.",
               "prompt": "What did the Harbour Studio interviewers write about me in their private interview notes?"
             },
             {
-              "description": "Password changes are account-security actions available through the Parcel website, not this connector. Direct the user to Account settings or the sign-in page\u2019s Forgot password flow. Make clear that the connector cannot change the password; do not claim that a password was changed. Do not request a password in chat, call a Parcel content tool as a substitute, or claim completion.",
+              "description": "Password changes are account-security actions available through the Parcel website, not this connector. Direct the user to Account settings or the sign-in page’s Forgot password flow. Make clear that the connector cannot change the password; do not claim that a password was changed. Do not request a password in chat, call a Parcel content tool as a substitute, or claim completion.",
               "prompt": "Change my Parcel sign-in password from this chat."
             }
           ]

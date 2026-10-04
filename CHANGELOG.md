@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.1](https://github.com/BareMinimumHQ/parcel-plugin/compare/v0.6.0...v0.6.1) (2026-10-04)
+
+
+### Bug Fixes
+
+* align directory review cases with current Parcel workflows ([#26](https://github.com/BareMinimumHQ/parcel-plugin/issues/26)) ([fb8acab](https://github.com/BareMinimumHQ/parcel-plugin/commit/fb8acabecfb6651dbe8e60535a1496a904c07337))
+
 ## [0.6.0](https://github.com/BareMinimumHQ/parcel-plugin/compare/v0.5.0...v0.6.0) (2026-10-03)
 
 
