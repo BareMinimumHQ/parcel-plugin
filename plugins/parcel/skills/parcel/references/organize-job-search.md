@@ -35,3 +35,7 @@ Use one operations array for related changes to a saved document. Each operation
 | item.reorder | sectionId, orderedIds containing every item ID once |
 
 A field key starts with a lowercase letter and uses lowercase letters, digits, or underscores, up to 48 characters. Keep it stable when changing a label. Use the discovered valueType enum. Clearing an item field requires its empty/default value; omission retains it. Each call accepts up to ten operations against one content revision; a failure saves none of that batch.
+
+## Account Name and Public address
+
+Use `get_account_identity` and `update_account_name` for the optional Account Name. Copy the exact current name into ifName, using an empty string when no name is set. A name change uses its own operationId and leaves saved document names unchanged. Career Profile accountName is current identity metadata, not a Profile field or a historical name. Use the separate Public Resume settings and sharing tools for the Public address; changing that address makes old sharing links stop working.
