@@ -1,7 +1,7 @@
 {
   "name": "parcel",
   "version": "0.6.1",
-  "description": "Organize your job search. Compare roles, tailor resumes and cover letters, research companies, and practise interviews with your connected assistant.",
+  "description": "Parcel keeps your job search organized, from finding promising roles to preparing for interviews. Bring your career profile, opportunities, tailored resumes, cover letters, and preparation together in one place. Work with your preferred assistant to compare roles, prepare stronger applications, and pick up where you left off—with your saved work ready for the next step.",
   "author": {
     "name": "Simon Ho",
     "email": "contact@workinparcel.com",
@@ -21,7 +21,7 @@
   "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "Parcel",
-    "longDescription": "Organize your job search: career details, preferences, Jobs, postings, Matches, Resumes, Cover Letters, research, Interview preparation, and Notes. Use your connected assistant to compare roles, prepare documents, and continue from your saved work. Review current information and saved PDFs in the conversation when your host supports embedded views. You choose what to save and which information the assistant can access. Parcel does not submit applications, contact employers, or guarantee employment. Your assistant may perform separately authorized external work using its own tools; those actions are not performed by Parcel. Drafts stay in the conversation until you authorize saving. A Parcel account and an authorized connection are required; browsing and independent factual review depend on your assistant’s capabilities.",
+    "longDescription": "Parcel keeps your job search organized, from finding promising roles to preparing for interviews. Bring your career profile, opportunities, tailored resumes, cover letters, and preparation together in one place. Work with your preferred assistant to compare roles, prepare stronger applications, and pick up where you left off—with your saved work ready for the next step.",
     "developerName": "Simon Ho",
     "category": "Productivity",
     "capabilities": [
@@ -50,7 +50,7 @@
     "com.openai": {
       "interface": {
         "displayName": "Parcel",
-        "longDescription": "Organize your job search: career details, preferences, Jobs, postings, Matches, Resumes, Cover Letters, research, Interview preparation, and Notes. Use your connected assistant to compare roles, prepare documents, and continue from your saved work. Review current information and saved PDFs in the conversation when your host supports embedded views. You choose what to save and which information the assistant can access. Parcel does not submit applications, contact employers, or guarantee employment. Your assistant may perform separately authorized external work using its own tools; those actions are not performed by Parcel. Drafts stay in the conversation until you authorize saving. A Parcel account and an authorized connection are required; browsing and independent factual review depend on your assistant’s capabilities.",
+        "longDescription": "Parcel keeps your job search organized, from finding promising roles to preparing for interviews. Bring your career profile, opportunities, tailored resumes, cover letters, and preparation together in one place. Work with your preferred assistant to compare roles, prepare stronger applications, and pick up where you left off—with your saved work ready for the next step.",
         "developerName": "Simon Ho",
         "category": "Productivity",
         "capabilities": [
@@ -129,7 +129,7 @@
       },
       "publication": {
         "countries": [],
-        "release_notes": "Consolidated Parcel into one common skill with eight workflow references and a smaller MCP tool catalog. Added scoped Account, Job and Interview context reads, consistent create/update operations, and batched document edits. Updated directory review cases to the current tools. Saved PDF views use the document name as their single heading; shared write schemas require operationId where every mode requires it."
+        "release_notes": "Updated the ChatGPT and Claude listing descriptions to explain what Parcel is and how it keeps a job search organized. No tool or workflow behavior changed."
       }
     }
   }

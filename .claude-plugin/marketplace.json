@@ -1,6 +1,6 @@
 {
   "name": "parcel",
-  "description": "Organize your job search. Compare roles, tailor resumes and cover letters, research companies, and practise interviews with your connected assistant.",
+  "description": "Parcel keeps your job search organized, from finding promising roles to preparing for interviews. Bring your career profile, opportunities, tailored resumes, cover letters, and preparation together in one place. Work with your preferred assistant to compare roles, prepare stronger applications, and pick up where you left off—with your saved work ready for the next step.",
   "owner": {
     "name": "Simon Ho",
     "email": "contact@workinparcel.com"
@@ -9,7 +9,7 @@
     {
       "name": "parcel",
       "source": "./plugins/parcel",
-      "description": "Organize your job search. Compare roles, tailor resumes and cover letters, research companies, and practise interviews with your connected assistant."
+      "description": "Parcel keeps your job search organized, from finding promising roles to preparing for interviews. Bring your career profile, opportunities, tailored resumes, cover letters, and preparation together in one place. Work with your preferred assistant to compare roles, prepare stronger applications, and pick up where you left off—with your saved work ready for the next step."
     }
   ]
 }
