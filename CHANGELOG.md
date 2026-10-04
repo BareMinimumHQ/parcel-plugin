@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.3](https://github.com/BareMinimumHQ/parcel-plugin/compare/v0.6.2...v0.6.3) (2026-10-04)
+
+
+### Bug Fixes
+
+* include required review walkthrough URL ([#30](https://github.com/BareMinimumHQ/parcel-plugin/issues/30)) ([d54c9b8](https://github.com/BareMinimumHQ/parcel-plugin/commit/d54c9b8ca7a66385e1db973d014dd94aa5bc10c1))
+
 ## [0.6.2](https://github.com/BareMinimumHQ/parcel-plugin/compare/v0.6.1...v0.6.2) (2026-10-04)
 
 
