@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.4](https://github.com/BareMinimumHQ/parcel-plugin/compare/v0.6.3...v0.6.4) (2026-10-06)
+
+
+### Bug Fixes
+
+* align skills with the shared account name ([#32](https://github.com/BareMinimumHQ/parcel-plugin/issues/32)) ([b14f1cd](https://github.com/BareMinimumHQ/parcel-plugin/commit/b14f1cd4b4392316838b016da73d9d9aa205c5d8))
+
 ## [0.6.3](https://github.com/BareMinimumHQ/parcel-plugin/compare/v0.6.2...v0.6.3) (2026-10-04)
 
 
