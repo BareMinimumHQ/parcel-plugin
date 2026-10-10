@@ -10,7 +10,7 @@ Use each saved Priority's description as its scoring rubric. Where useful, expla
 
 Use the Match's optional Experience section to record the person's fit for the role separately from Job Preference scores. Read relevant saved Career Profile or Resume evidence as authorized. Write `overlap` as evidence-grounded bullets explaining how supported skills, knowledge, and past work align with the posting. Write `gaps` as bullets with explicit labels:
 
-- **Soft gap:** Related experience or knowledge can transfer, but a difference in tool, domain, scale, depth, or responsibility remains. Explain both the transferable evidence and what the person still needs to learn or demonstrate.
+- **Soft gap:** A transferable experience gap, not a lack of interpersonal soft skills. Related experience or knowledge can transfer, but a difference in tool, domain, scale, depth, or responsibility remains. Explain both the transferable evidence and what the person still needs to learn or demonstrate.
 - **Hard gap:** The person is confirmed to lack a required capability, with no supported equivalent. Identify the requirement and the evidence that establishes the gap.
 - **Unconfirmed:** The available information does not establish whether the person has the capability. State what needs confirmation. A skill omitted from a saved profile is not a confirmed Hard gap.
 
