@@ -34,3 +34,9 @@ claude plugin install parcel@parcel
 ```
 
 Connect your Parcel account in your browser when prompted and review the requested access.
+
+## Development and releases
+
+Run `node scripts/validate.mjs` for package checks. Follow [AGENTS.md](AGENTS.md) when changing plugin guidance or its server contract expectations.
+
+Merging a plugin fix or documentation change into main lets Release Please prepare a release PR. Merging that release PR cuts the version and attaches inspected packages. Guidance changes need a plugin release to reach provider-distributed packages; website-only changes do not require a plugin release. Provider publication and user updates follow each provider's distribution process.
