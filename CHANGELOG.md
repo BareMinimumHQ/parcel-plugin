@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.6.5](https://github.com/BareMinimumHQ/parcel-plugin/compare/v0.6.4...v0.6.5) (2026-10-10)
+
+
+### Bug Fixes
+
+* release plugin documentation changes ([#38](https://github.com/BareMinimumHQ/parcel-plugin/issues/38)) ([6f5e2d0](https://github.com/BareMinimumHQ/parcel-plugin/commit/6f5e2d0ddccf699c320b0af86425e582380bbdc3))
+
+
+### Documentation
+
+* align document workflows with server contracts ([#40](https://github.com/BareMinimumHQ/parcel-plugin/issues/40)) ([a5dd419](https://github.com/BareMinimumHQ/parcel-plugin/commit/a5dd419d0d66b519a27809901f92ee5778b862a7))
+* prefer focused reads and batched edits ([#35](https://github.com/BareMinimumHQ/parcel-plugin/issues/35)) ([0cf44f3](https://github.com/BareMinimumHQ/parcel-plugin/commit/0cf44f39327158da73f17523f093fea821c6b801))
+* write Talking Points as spoken responses ([#36](https://github.com/BareMinimumHQ/parcel-plugin/issues/36)) ([65aa00d](https://github.com/BareMinimumHQ/parcel-plugin/commit/65aa00da95c7b835d20c17c6783009ec3a0e1af6))
+
 ## [0.6.4](https://github.com/BareMinimumHQ/parcel-plugin/compare/v0.6.3...v0.6.4) (2026-10-06)
 
 
