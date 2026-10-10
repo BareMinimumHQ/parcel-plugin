@@ -1,6 +1,6 @@
 # Company research for a Job
 
-Use `list_jobs` when needed to identify the intended Job, `get_job_workspace` for its current Posting and details, and `get_company_research` for the saved Company research collection and its revision. When useful, read the person's relevant Career Profile with `get_account_context` and Job Resume with `get_document`. Request a needed section in full when a default read is summarized; do not treat a summary or denied section as complete evidence.
+Use `list_jobs` when needed to identify the intended Job, `get_job_workspace` with `sections: ["job", "posting"]` for its current Posting and details, and `get_interview_workspace` with `sections: ["research"]` for the saved Company research collection and its revision. When useful, read the person's relevant Career Profile with `get_account_context` and Job Resume with `get_document`. Request a needed section in full when a default read is summarized; do not treat a summary or denied section as complete evidence.
 
 Start the research with a sourced company overview before doing role-specific digging. Identify the hiring organization and distinguish it from a parent, brand, or product when relevant. Cover what the company offers, whom it serves, its business model and stage, a concise history of major milestones or pivots, and its current strategy, direction, or roadmap where reliable sources support those details. Use primary sources for the company's own claims. Do not guess private or unavailable facts; label them as unknown when they matter.
 
