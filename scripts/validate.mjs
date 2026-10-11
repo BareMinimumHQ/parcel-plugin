@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { resolve, dirname, relative } from "node:path";
 
-import { generatedManifests } from "./sync-manifests.mjs";
+import { generatedManifests, syncReadme } from "./sync-manifests.mjs";
 
 const read = (path) => JSON.parse(readFileSync(path, "utf8"));
 const packageRoot = resolve(process.argv[2] ?? "plugins/parcel");
@@ -206,6 +206,7 @@ for (const [kind, count, fields] of [
       assert.ok(typeof test[field] === "string" && test[field].trim());
   }
 }
+syncReadme(process.cwd(), false, packageRoot);
 assert.ok(existsSync(packaged("LICENSE")));
 const prose = readFileSync(packaged("README.md"), "utf8").replace(
   /```[\s\S]*?```/g,

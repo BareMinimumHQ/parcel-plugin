@@ -60,7 +60,7 @@ jobs:
         env:
           RELEASE_BRANCH: ${{ steps.release-pr.outputs.branch }}
         run: |
-          git add plugins/parcel/plugin.json plugins/parcel/.codex-plugin/plugin.json plugins/parcel/.claude-plugin/plugin.json plugins/parcel/.mcp.json .agents/plugins/marketplace.json .claude-plugin/marketplace.json
+          git add plugins/parcel/README.md plugins/parcel/plugin.json plugins/parcel/.codex-plugin/plugin.json plugins/parcel/.claude-plugin/plugin.json plugins/parcel/.mcp.json .agents/plugins/marketplace.json .claude-plugin/marketplace.json
           if ! git diff --cached --quiet; then
             git config user.name 'github-actions[bot]'
             git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
@@ -82,7 +82,7 @@ jobs:
           RELEASE_TAG: ${{ steps.release.outputs.tag_name }}
         run: |
           node scripts/sync-manifests.mjs --write
-          git diff --exit-code -- plugins/parcel/plugin.json plugins/parcel/.codex-plugin/plugin.json plugins/parcel/.claude-plugin/plugin.json plugins/parcel/.mcp.json .agents/plugins/marketplace.json .claude-plugin/marketplace.json
+          git diff --exit-code -- plugins/parcel/README.md plugins/parcel/plugin.json plugins/parcel/.codex-plugin/plugin.json plugins/parcel/.claude-plugin/plugin.json plugins/parcel/.mcp.json .agents/plugins/marketplace.json .claude-plugin/marketplace.json
           node --test scripts/sync-manifests.test.mjs
           python3 -m unittest discover -s scripts -p 'test_*.py'
           python3 scripts/package.py --tag "$RELEASE_TAG"

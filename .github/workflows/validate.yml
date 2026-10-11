@@ -13,6 +13,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - name: Generate packaged README
+        run: |
+          node --input-type=module -e "import { syncReadme } from './scripts/sync-manifests.mjs'; syncReadme(process.cwd(), true);"
+          git diff --exit-code -- plugins/parcel/README.md
       - run: node scripts/validate.mjs
       - name: Validate Claude marketplace and plugin
         run: |

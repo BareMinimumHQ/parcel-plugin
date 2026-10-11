@@ -19,7 +19,7 @@
   ],
   "displayName": "Parcel",
   "icon": "./assets/logo.png",
-  "documentationUrl": "https://github.com/BareMinimumHQ/parcel-plugin/tree/main/plugins/parcel/README.md",
+  "documentationUrl": "https://github.com/BareMinimumHQ/parcel-plugin",
   "supportUrl": "https://workinparcel.com/support",
   "privacyPolicyUrl": "https://workinparcel.com/privacy",
   "termsOfServiceUrl": "https://workinparcel.com/terms"

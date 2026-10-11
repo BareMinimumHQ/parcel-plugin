@@ -18,6 +18,8 @@ Keep the relevant contract and alignment checks current, and review compatibilit
 
 ## Development and releases
 
+Edit the repository-root README.md for user documentation; plugins/parcel/README.md is its generated copy. Keep links valid in both locations and omit decorative bundled image references from the shared README to avoid directory policy holds.
+
 Edit shared metadata in the repository-root `plugin.json`. Packaged manifests and marketplace catalogs are generated; do not edit them directly. Run `node scripts/sync-manifests.mjs --write` after metadata changes, then `node scripts/validate.mjs` for package checks. See `scripts/README.md` for the provider mappings and submission checks.
 
 Merging a plugin fix or documentation change into main lets Release Please prepare a release PR. Merging that release PR cuts the version and attaches inspected packages.

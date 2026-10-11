@@ -12,13 +12,7 @@
   "homepage": "https://workinparcel.com/",
   "repository": "https://github.com/BareMinimumHQ/parcel-plugin",
   "license": "GPL-3.0-only",
-  "keywords": [
-    "job-search",
-    "resume",
-    "cover-letter",
-    "interview",
-    "career"
-  ],
+  "keywords": ["job-search", "resume", "cover-letter", "interview", "career"],
   "category": "Productivity",
   "capabilities": [
     "Organize Jobs",
@@ -32,7 +26,7 @@
     "Show my saved Career Profile in Parcel.",
     "Show the PDF of my reusable Resume in Parcel."
   ],
-  "documentationUrl": "https://github.com/BareMinimumHQ/parcel-plugin/tree/main/plugins/parcel/README.md",
+  "documentationUrl": "https://github.com/BareMinimumHQ/parcel-plugin",
   "supportUrl": "https://workinparcel.com/support",
   "privacyPolicyUrl": "https://workinparcel.com/privacy",
   "termsOfServiceUrl": "https://workinparcel.com/terms",

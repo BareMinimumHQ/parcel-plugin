@@ -22,6 +22,21 @@ test("source changes fail checking until regenerated; manual catalog edits also 
         readFileSync(resolve("plugins/parcel", name)),
       );
     }
+    writeFileSync(resolve(root, "README.md"), readFileSync("README.md"));
+    syncManifests(root, true);
+    syncManifests(root);
+    const readme = resolve(root, "README.md");
+    const packagedReadme = resolve(root, "plugins/parcel/README.md");
+    const originalReadme = readFileSync(readme, "utf8");
+    writeFileSync(readme, originalReadme + "\nUpdated documentation.\n");
+    assert.throws(() => syncManifests(root), /Packaged README is stale/);
+    syncManifests(root, true);
+    assert.equal(
+      readFileSync(packagedReadme, "utf8"),
+      readFileSync(readme, "utf8"),
+    );
+    writeFileSync(packagedReadme, "Manual README drift");
+    assert.throws(() => syncManifests(root), /Packaged README is stale/);
     syncManifests(root, true);
     syncManifests(root);
     const source = resolve(root, "plugin.json");
