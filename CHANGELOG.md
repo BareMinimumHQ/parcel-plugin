@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/BareMinimumHQ/parcel-plugin/compare/v1.0.2...v1.0.3) (2026-10-11)
+
+
+### Bug Fixes
+
+* unify icons ([#6](https://github.com/BareMinimumHQ/parcel-plugin/issues/6)) ([082d5ad](https://github.com/BareMinimumHQ/parcel-plugin/commit/082d5ad0d15d0c91b076a9a4daaec89eed94843f))
+
 ## [1.0.2](https://github.com/BareMinimumHQ/parcel-plugin/compare/v1.0.1...v1.0.2) (2026-10-11)
 
 
