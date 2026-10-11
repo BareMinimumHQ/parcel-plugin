@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/BareMinimumHQ/parcel-plugin/compare/v1.0.1...v1.0.2) (2026-10-11)
+
+
+### Bug Fixes
+
+* sync plugin documentation ([#4](https://github.com/BareMinimumHQ/parcel-plugin/issues/4)) ([9336830](https://github.com/BareMinimumHQ/parcel-plugin/commit/9336830894e7f1dec1695218aa431e108b81c391))
+
 ## [1.0.1](https://github.com/BareMinimumHQ/parcel-plugin/compare/v1.0.0...v1.0.1) (2026-10-11)
 
 
