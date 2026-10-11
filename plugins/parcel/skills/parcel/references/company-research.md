@@ -1,0 +1,13 @@
+# Company research for a Job
+
+Identify the intended Job and read its current Posting, details, and complete saved Company research. When useful, read the person's relevant Career Profile and Job Resume. Do not treat a summary or denied context as complete evidence.
+
+Start the research with a sourced company overview before doing role-specific digging. Identify the hiring organization and distinguish it from a parent, brand, or product when relevant. Cover what the company offers, whom it serves, its business model and stage, a concise history of major milestones or pivots, and its current strategy, direction, or roadmap where reliable sources support those details. Use primary sources for the company's own claims. Do not guess private or unavailable facts; label them as unknown when they matter.
+
+Then use the overview to focus additional research on the specific Job Posting and the person's supported experience. Explain which company products, customers, technical areas, or strategic changes connect to the role, and where the person's Career Profile or Job Resume provides relevant evidence. Keep company facts separate from inferences about role relevance, and state thin, conflicting, or missing evidence plainly. Do not turn research into predicted interview questions, suggested answers, scripts, or Talking Points.
+
+Prefer the company site, product and engineering blogs, investor or earnings materials when relevant, press releases, and recent public leadership statements. Use independent reporting to add material context or corroborate important claims. When current developments matter, focus on roughly the last twelve months while using older sources for useful history; check event dates rather than assuming a newly published article describes a new event. Link every material company claim to a descriptive source. Gather only sources you can access, and do not claim Parcel verified them.
+
+Keep the research objective and concise. Separate confirmed facts, inferences, and open questions, with labeled HTTP(S) links. Omit generic boilerplate. Do this work when requested rather than automatically for every discovered Job.
+
+Propose ordered sections and concise items with Low, Medium, or High Priority. Follow the discovered operation's current limits. Reconcile useful existing items, update superseded information, combine duplicates, and avoid replacing useful content merely because a lookup failed. If the request does not already authorize a save, show the proposed change and wait for authorization. Preserve all useful retained research when replacing a collection. Follow the common conflict and safe retry rules. If a source is unavailable, report the gap. Never invent a successful save.

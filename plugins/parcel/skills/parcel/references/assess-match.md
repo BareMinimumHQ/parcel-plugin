@@ -1,0 +1,19 @@
+# Assess a Match
+
+Use the `parcel` MCP tools to read the current Job, Saved Job Posting, Job Preferences, and Match. If a posting or meaningful preferences are missing, explain what is needed before scoring. Use saved Priority references; never invent records. An existing Match uses captured posting and preference snapshots: assess those sources, and explain changed-source indicators before proposing a rebase. Do not silently rebase or clear saved assessments.
+
+Assess each configured Filter using the current supported outcomes. Compare its preference value with explicit posting evidence; distinguish no match, not stated, and unclear. Add a concise explanation when it explains an outcome or uncertainty. Do not infer compensation, location, seniority, or working arrangements without support.
+
+Score supported Priorities on the 1–5 scale, where higher means a closer fit to the stated preference. Include an explanation for every scored Priority: the source facts, why they support that score, and any evidence gap. Leave a Priority unscored when evidence is insufficient rather than assign a neutral guess. Use the person's Priority descriptions and weights without changing them. Estimated Match is Parcel's calculation, not a hiring probability; Filters do not contribute to it.
+
+Use each saved Priority's description as its scoring rubric. Where useful, explain what low (1), moderate (3), and strong (5) evidence would mean for that specific preference. Score the opportunity the role offers, rather than the candidate's qualifications, unless that Priority explicitly asks otherwise. Do not introduce a universal rubric, change weights, or copy another person's preferences. Missing evidence stays unscored; absence of a salary range is a source gap, with any stricter pass/fail policy coming from the person's explicit requirements.
+
+Use the Match's optional Experience section to record the person's fit for the role separately from Job Preference scores. Read relevant saved Career Profile or Resume evidence as authorized. Write the overlap assessment as evidence-grounded bullets explaining how supported skills, knowledge, and past work align with the posting. Write the gap assessment as bullets with explicit labels:
+
+- **Soft gap:** A transferable experience gap, not a lack of interpersonal soft skills. Related experience or knowledge can transfer, but a difference in tool, domain, scale, depth, or responsibility remains. Explain both the transferable evidence and what the person still needs to learn or demonstrate.
+- **Hard gap:** The person is confirmed to lack a required capability, with no supported equivalent. Identify the requirement and the evidence that establishes the gap.
+- **Unconfirmed:** The available information does not establish whether the person has the capability. State what needs confirmation. A skill omitted from a saved profile is not a confirmed Hard gap.
+
+Do not invent or exaggerate experience, disguise a confirmed gap, or reject a credible reach solely for a tool-name mismatch. Experience does not contribute to Estimated Match. Empty fields mean no assessment was saved, not that there is no overlap or no gap. Preserve unrelated saved Experience when changing preference assessments. Job Preference rebase retains Experience; review its evidence deliberately rather than assuming a Career Profile change supplies a stale indicator.
+
+Show the assessment and supporting evidence for review. Save when authorized through the current discovered operation. Preserve unrelated saved assessments and Experience when making a focused change; clearing or replacing them must be intentional. Experience can be assessed independently without fabricating Filter assessments or Priority scores. If the person approves updating the captured sources, refresh them deliberately and assess the new snapshots. Report what was actually saved and follow the common conflict and safe retry rules.

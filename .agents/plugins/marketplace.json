@@ -1,0 +1,12 @@
+{
+  "name": "parcel",
+  "interface": { "displayName": "Parcel" },
+  "plugins": [
+    {
+      "name": "parcel",
+      "source": { "source": "local", "path": "./plugins/parcel" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
+      "category": "Productivity"
+    }
+  ]
+}

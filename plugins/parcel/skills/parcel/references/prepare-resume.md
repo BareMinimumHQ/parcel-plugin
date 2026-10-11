@@ -1,0 +1,13 @@
+# Prepare a Job Resume
+
+Use the `parcel` MCP tools to read the Job, Saved Job Posting, current Job Resume, Career Profile, and relevant Account Resumes. Use supported experience only. If there is no usable source, ask for the person's experience or a source Resume. Do not invent employment, dates, qualifications, achievements, metrics, or skills. Distinguish the person's evidence from suggestions that need confirmation.
+
+Choose a starting point with the person: retain an existing Job Resume, create a blank structured Job Resume, or copy an Account Resume. Account Resumes and Job Resumes are independent. Never alter an Account Resume as an incidental step in tailoring a Job Resume. Copying a source replaces the Job Resume and needs explicit approval when saved work already exists. Uploaded PDFs are immutable content; do not pretend their fields can be edited. Replacing an uploaded Job Resume with editable content or another source is a material replacement: explain what will be retained and replaced before saving. Use current discovered capabilities; Parcel constructs the saved document.
+
+Confirm which saved Profile or selected Resume is the person's authoritative experience source when they conflict. Treat a reusable source Resume as evidence, never a file to overwrite as an incidental part of tailoring. Map the role's important requirements to concrete experience, outcomes and relevance. Prioritize three to five strong connections rather than repeat every keyword. A comparable tool or platform may demonstrate transferable capability; retain the actual technology and scope used instead of rewriting it as the employer's exact tool or scale. State material gaps honestly and ask for missing evidence.
+
+Follow the draft review and save rules in the Parcel skill before treating this material as ready.
+
+Prepare a targeted content proposal that emphasizes relevant supported evidence and preserves useful existing content. Show material changes and open questions for review before any save, including creation or copying. After approval, supply the content or focused edits through the current discovered operations. Parcel manages new document structure and identifiers. Preserve unrelated saved content and do not change presentation settings unless requested. Display the confirmed saved Resume when the person wants its PDF.
+
+Follow the common conflict and safe retry rules. Do not claim an unsaved proposal is the saved PDF, expose revision browsing, synchronize an Account Resume, publish a Resume, or submit an application.

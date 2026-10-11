@@ -1,0 +1,20 @@
+{
+  "name": "parcel",
+  "displayName": "Parcel",
+  "version": "1.0.0",
+  "description": "Parcel keeps your job search organized, from finding promising roles to preparing for interviews. Bring your career profile, opportunities, tailored resumes, cover letters, and preparation together in one place. Work with your preferred assistant to compare roles, prepare stronger applications, and pick up where you left off—with your saved work ready for the next step.",
+  "author": {
+    "name": "Simon Ho",
+    "email": "contact@workinparcel.com",
+    "url": "https://workinparcel.com/"
+  },
+  "homepage": "https://workinparcel.com/",
+  "repository": "https://github.com/BareMinimumHQ/parcel-plugin",
+  "license": "GPL-3.0-only",
+  "keywords": ["job-search", "resume", "cover-letter", "interview", "career"],
+  "icon": "./assets/logo-light.svg",
+  "documentationUrl": "https://github.com/BareMinimumHQ/parcel-plugin/tree/main/plugins/parcel",
+  "supportUrl": "https://workinparcel.com/support",
+  "privacyPolicyUrl": "https://workinparcel.com/privacy",
+  "termsOfServiceUrl": "https://workinparcel.com/terms"
+}
