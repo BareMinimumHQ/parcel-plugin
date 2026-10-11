@@ -16,7 +16,34 @@ export function generatedManifests(plugin, mcp) {
       "keywords",
     ].map((key) => [key, plugin[key]]),
   );
-  const openai = plugin.extensions["com.openai"];
+  assert.ok(
+    !plugin.extensions?.["com.openai"]?.interface,
+    "Shared presentation belongs in the root metadata fields",
+  );
+  const presentation = {
+    displayName: plugin.displayName,
+    shortDescription: plugin.shortDescription,
+    longDescription: plugin.description,
+    developerName: plugin.author.name,
+    category: plugin.category,
+    capabilities: plugin.capabilities,
+    defaultPrompt: plugin.defaultPrompt,
+    websiteURL: plugin.homepage,
+    supportURL: plugin.supportUrl,
+    privacyPolicyURL: plugin.privacyPolicyUrl,
+    termsOfServiceURL: plugin.termsOfServiceUrl,
+    logo: plugin.logo,
+    composerIcon: plugin.logo,
+    logoDark: plugin.logoDark,
+    composerIconDark: plugin.logoDark,
+  };
+  const extensions = {
+    ...plugin.extensions,
+    "com.openai": {
+      ...plugin.extensions?.["com.openai"],
+      interface: presentation,
+    },
+  };
   const servers = Object.fromEntries(
     Object.entries(mcp.mcpServers).map(([name, server]) => {
       assert.equal(
@@ -28,33 +55,37 @@ export function generatedManifests(plugin, mcp) {
     }),
   );
   return {
+    "plugins/parcel/plugin.json": {
+      $schema: "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+      ...shared,
+      extensions,
+    },
     "plugins/parcel/.codex-plugin/plugin.json": {
       ...shared,
       skills: "./skills/",
       mcpServers: "./.mcp.json",
-      interface: openai.interface,
-      extensions: plugin.extensions,
+      interface: presentation,
+      extensions,
     },
     "plugins/parcel/.claude-plugin/plugin.json": {
-      name: plugin.name,
-      displayName: openai.interface.displayName,
       ...shared,
-      icon: openai.interface.logo,
-      documentationUrl: `${plugin.repository}/tree/main/plugins/parcel`,
-      supportUrl: openai.interface.supportURL,
-      privacyPolicyUrl: openai.interface.privacyPolicyURL,
-      termsOfServiceUrl: openai.interface.termsOfServiceURL,
+      displayName: plugin.displayName,
+      icon: plugin.icon,
+      documentationUrl: plugin.documentationUrl,
+      supportUrl: plugin.supportUrl,
+      privacyPolicyUrl: plugin.privacyPolicyUrl,
+      termsOfServiceUrl: plugin.termsOfServiceUrl,
     },
     "plugins/parcel/.mcp.json": { mcpServers: servers },
     ".agents/plugins/marketplace.json": {
       name: plugin.name,
-      interface: { displayName: openai.interface.displayName },
+      interface: { displayName: plugin.displayName },
       plugins: [
         {
           name: plugin.name,
           source: { source: "local", path: "./plugins/parcel" },
           policy: { installation: "AVAILABLE", authentication: "ON_INSTALL" },
-          category: openai.interface.category,
+          category: plugin.category,
         },
       ],
     },
@@ -66,6 +97,7 @@ export function generatedManifests(plugin, mcp) {
         {
           name: plugin.name,
           source: "./plugins/parcel",
+          displayName: plugin.displayName,
           description: plugin.description,
         },
       ],
@@ -76,7 +108,7 @@ export function generatedManifests(plugin, mcp) {
 export function syncManifests(root, write = false) {
   const read = (path) => JSON.parse(readFileSync(resolve(root, path), "utf8"));
   const generated = generatedManifests(
-    read("plugins/parcel/plugin.json"),
+    read("plugin.json"),
     read("plugins/parcel/mcp.json"),
   );
   for (const [path, expected] of Object.entries(generated)) {

@@ -15,7 +15,7 @@
         },
         { "type": "docs", "section": "Documentation", "hidden": false }
       ],
-      "extra-files": ["plugins/parcel/plugin.json"]
+      "extra-files": ["plugin.json"]
     }
   }
 }
