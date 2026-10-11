@@ -32,10 +32,10 @@ export function generatedManifests(plugin, mcp) {
     supportURL: plugin.supportUrl,
     privacyPolicyURL: plugin.privacyPolicyUrl,
     termsOfServiceURL: plugin.termsOfServiceUrl,
-    logo: plugin.logo,
-    composerIcon: plugin.logo,
-    logoDark: plugin.logoDark,
-    composerIconDark: plugin.logoDark,
+    logo: plugin.icon,
+    composerIcon: plugin.icon,
+    logoDark: plugin.icon,
+    composerIconDark: plugin.icon,
   };
   const extensions = {
     ...plugin.extensions,
