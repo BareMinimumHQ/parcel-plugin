@@ -105,7 +105,32 @@ export function generatedManifests(plugin, mcp) {
   };
 }
 
+export function syncReadme(
+  root,
+  write = false,
+  packageRoot = resolve(root, "plugins/parcel"),
+) {
+  const expected = readFileSync(resolve(root, "README.md"), "utf8");
+  const destination = resolve(packageRoot, "README.md");
+  if (write) {
+    mkdirSync(dirname(destination), { recursive: true });
+    if (
+      !existsSync(destination) ||
+      readFileSync(destination, "utf8") !== expected
+    ) {
+      writeFileSync(destination, expected);
+    }
+  } else {
+    assert.equal(
+      readFileSync(destination, "utf8"),
+      expected,
+      "Packaged README is stale; run node scripts/sync-manifests.mjs --write",
+    );
+  }
+}
+
 export function syncManifests(root, write = false) {
+  syncReadme(root, write);
   const read = (path) => JSON.parse(readFileSync(resolve(root, path), "utf8"));
   const generated = generatedManifests(
     read("plugin.json"),
@@ -148,7 +173,7 @@ if (
   syncManifests(process.cwd(), process.argv.includes("--write"));
   console.log(
     process.argv.includes("--write")
-      ? "Generated host manifests and catalogs"
+      ? "Generated README, host manifests and catalogs"
       : "Generated metadata is consistent",
   );
 }

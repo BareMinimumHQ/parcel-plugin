@@ -1,14 +1,37 @@
 # Parcel
 
-![Parcel](assets/logo.png)
+[Parcel](https://workinparcel.com/) helps you organize your job search. Compare roles, tailor resumes and cover letters, research companies, and practise interviews with your connected assistant. Install Parcel in ChatGPT, Codex, Claude, or Claude Code using the instructions below. After installation, sign in to Parcel and choose the access you want to give your assistant.
 
-[Parcel](https://workinparcel.com/) helps you organize your job search, including jobs, application documents, company research, and interview preparation. Connect it to your chosen assistant to compare roles, prepare applications, and pick up where you left off. You choose what information your assistant can access when you connect Parcel.
+## ChatGPT
 
-To install it in **ChatGPT**, find Parcel under **Plugins** and add it after its directory listing is available. For **Codex**, add `BareMinimumHQ/parcel-plugin` as a marketplace, then install Parcel through `/plugins`. For **Claude**, find Parcel in **Customize → Plugins → Discover** after its directory listing is available, or add this repository as a marketplace through **Customize → Plugins → Add** and then add Parcel from **Discover**. For **Claude Code**, run `claude plugin marketplace add BareMinimumHQ/parcel-plugin` followed by `claude plugin install parcel@parcel`.
+In ChatGPT, open **Plugins**, find **Parcel**, and add it. Connect your Parcel account when prompted, review the requested access, then start a new chat. Parcel must be listed in the ChatGPT Plugins Directory for this installation path to appear.
 
-Connect a Parcel account when prompted and approve the information your assistant may access. Job Posting capture and company research use the browsing tools available in your assistant.
+## Codex
 
-Your assistant may also help with external applications using its own browser or other tools when you authorize that work. Parcel does not perform those actions. Saving a document or changing a Job status in Parcel does not confirm that an external application was submitted.
+Add this repository as a marketplace:
+
+```sh
+codex plugin marketplace add BareMinimumHQ/parcel-plugin
+```
+
+In an interactive Codex session, open `/plugins`, select **Parcel**, and install it. Sign in to Parcel in your browser, review the requested access, then start a new session.
+
+## Claude
+
+In Claude, open **Customize → Plugins → Discover**, find **Parcel**, and select **Add**.
+
+You can also install from this repository: open **Customize → Plugins → Add → Add marketplace → Add from a repository** and enter `BareMinimumHQ/parcel-plugin`. Then find **Parcel** in **Discover** and add it. With either route, connect your Parcel account when prompted and review the requested access.
+
+## Claude Code
+
+Add this repository as a marketplace and install Parcel:
+
+```sh
+claude plugin marketplace add BareMinimumHQ/parcel-plugin
+claude plugin install parcel@parcel
+```
+
+Connect your Parcel account in your browser when prompted and review the requested access.
 
 ## Privacy and access
 
@@ -20,4 +43,4 @@ The plugin connects only to Parcel at `https://workinparcel.com/mcp` through OAu
 
 This plugin provides one Parcel skill with eight workflows and connects to Parcel's hosted OAuth MCP server. It does not run a local server, submit applications, contact employers, guarantee an offer, or perform account deletion from the conversation. Embedded views depend on the host; saved data remains available through the tools when a view is unavailable.
 
-Licensed under [GPL-3.0-only](LICENSE).
+Licensed under [GPL-3.0-only](https://github.com/BareMinimumHQ/parcel-plugin/blob/main/plugins/parcel/LICENSE).
