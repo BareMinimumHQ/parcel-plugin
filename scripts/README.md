@@ -20,12 +20,14 @@ The repository-root `plugin.json` is the authoring source. Its root fields hold 
 | `displayName`                                                                               | OpenAI interface and marketplace; Claude manifest and marketplace entry |
 | `description`, `shortDescription`, `author.name`                                            | OpenAI long description, subtitle, and developer name                   |
 | `homepage`, `supportUrl`, `privacyPolicyUrl`, `termsOfServiceUrl`                           | OpenAI listing URLs; corresponding Claude listing URLs                  |
-| `documentationUrl`, `icon`                                                                  | Claude documentation link and listing image                             |
-| `logo`, `logoDark`                                                                          | OpenAI logo and composer icon for each theme                            |
+| `documentationUrl`                                                                          | Claude documentation link                                               |
+| `icon`                                                                                      | Claude listing image; OpenAI logo and composer icon in both themes      |
 | `category`, `capabilities`, `defaultPrompt`                                                 | OpenAI presentation; category also goes to the Codex marketplace        |
 | `extensions.com.openai.review`, `extensions.com.openai.publication`                         | OpenAI submission metadata only                                         |
 
 `plugins/parcel/mcp.json` owns the portable server endpoint and transport. Generation maps Streamable HTTP to the host spelling `http` in `.mcp.json`. The skill dependency must name the same server and endpoint; validation checks it.
+
+`assets/logo.png` is the shared provider icon: the dark blue mark on a rounded paper off-white (`#f8f7f4`) tile with transparent corners. All listing and composer fields use it in both themes. It is the only packaged brand asset; the website owns the transparent source mark.
 
 The repository-root README.md is the user-documentation source. The same generation command copies it verbatim into plugins/parcel/README.md. Validation checks exact equality, including extracted release archives. Use absolute links that work in both locations; the shared README omits decorative bundled images to avoid Claude policy holds. CI checks synchronization, and the release workflow regenerates and commits the copy with its manifests.
 

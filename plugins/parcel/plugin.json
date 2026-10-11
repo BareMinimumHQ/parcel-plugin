@@ -79,30 +79,30 @@
       },
       "interface": {
         "displayName": "Parcel",
-        "shortDescription": "Organize your job search",
+        "shortDescription": "Organize your job search.",
         "longDescription": "Parcel keeps your job search organized, from identifying promising roles to preparing for interviews. Bring your career profile, opportunities, tailored resumes, cover letters, and preparation together in one place. Work with your preferred assistant to compare roles, prepare stronger applications, and pick up where you left off—with your saved work ready for the next step.",
         "developerName": "Simon Ho",
         "category": "Productivity",
         "capabilities": [
-          "Organize Jobs",
+          "Organize jobs",
           "Compare roles",
-          "Prepare Resumes and Cover Letters",
+          "Prepare resumes and cover letters",
           "Review saved documents",
-          "Prepare for Interviews"
+          "Prepare for interviews"
         ],
         "defaultPrompt": [
           "Show my current Parcel jobs and what needs attention next.",
-          "Show my saved Career Profile in Parcel.",
-          "Show the PDF of my reusable Resume in Parcel."
+          "Show my saved career profile in Parcel.",
+          "Show the PDF of my reusable resume in Parcel."
         ],
         "websiteURL": "https://workinparcel.com/",
         "supportURL": "https://workinparcel.com/support",
         "privacyPolicyURL": "https://workinparcel.com/privacy",
         "termsOfServiceURL": "https://workinparcel.com/terms",
-        "logo": "./assets/logo-light.svg",
-        "composerIcon": "./assets/logo-light.svg",
-        "logoDark": "./assets/logo-dark.svg",
-        "composerIconDark": "./assets/logo-dark.svg"
+        "logo": "./assets/logo.png",
+        "composerIcon": "./assets/logo.png",
+        "logoDark": "./assets/logo.png",
+        "composerIconDark": "./assets/logo.png"
       }
     }
   }

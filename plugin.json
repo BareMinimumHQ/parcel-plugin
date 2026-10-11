@@ -3,7 +3,7 @@
   "displayName": "Parcel",
   "version": "1.0.2",
   "description": "Parcel keeps your job search organized, from identifying promising roles to preparing for interviews. Bring your career profile, opportunities, tailored resumes, cover letters, and preparation together in one place. Work with your preferred assistant to compare roles, prepare stronger applications, and pick up where you left off—with your saved work ready for the next step.",
-  "shortDescription": "Organize your job search",
+  "shortDescription": "Organize your job search.",
   "author": {
     "name": "Simon Ho",
     "email": "contact@workinparcel.com",
@@ -12,33 +12,25 @@
   "homepage": "https://workinparcel.com/",
   "repository": "https://github.com/BareMinimumHQ/parcel-plugin",
   "license": "GPL-3.0-only",
-  "keywords": [
-    "job-search",
-    "resume",
-    "cover-letter",
-    "interview",
-    "career"
-  ],
+  "keywords": ["job-search", "resume", "cover-letter", "interview", "career"],
   "category": "Productivity",
   "capabilities": [
-    "Organize Jobs",
+    "Organize jobs",
     "Compare roles",
-    "Prepare Resumes and Cover Letters",
+    "Prepare resumes and cover letters",
     "Review saved documents",
-    "Prepare for Interviews"
+    "Prepare for interviews"
   ],
   "defaultPrompt": [
     "Show my current Parcel jobs and what needs attention next.",
-    "Show my saved Career Profile in Parcel.",
-    "Show the PDF of my reusable Resume in Parcel."
+    "Show my saved career profile in Parcel.",
+    "Show the PDF of my reusable resume in Parcel."
   ],
   "documentationUrl": "https://github.com/BareMinimumHQ/parcel-plugin",
   "supportUrl": "https://workinparcel.com/support",
   "privacyPolicyUrl": "https://workinparcel.com/privacy",
   "termsOfServiceUrl": "https://workinparcel.com/terms",
   "icon": "./assets/logo.png",
-  "logo": "./assets/logo-light.svg",
-  "logoDark": "./assets/logo-dark.svg",
   "extensions": {
     "com.openai": {
       "review": {

@@ -95,22 +95,8 @@ function checkPackagedLinks(directory) {
   }
 }
 checkPackagedLinks(packageRoot);
-for (const [fields, theme, color] of [
-  [["logo", "composerIcon"], "light", "#10567d"],
-  [["logoDark", "composerIconDark"], "dark", "#c4e1f2"],
-]) {
-  for (const field of fields)
-    assert.equal(codex.interface[field], `./assets/logo-${theme}.svg`);
-  const svg = readFileSync(packaged(`assets/logo-${theme}.svg`), "utf8");
-  assert.match(svg, /<svg[^>]+xmlns="http:\/\/www\.w3\.org\/2000\/svg"/);
-  assert.match(svg, /viewBox="-9 -19\.75 120 120"/);
-  assert.ok(svg.includes(`color="${color}"`));
-  assert.ok(
-    !svg.includes("<style") &&
-      !svg.includes("<script") &&
-      !svg.includes("href="),
-  );
-}
+for (const field of ["logo", "composerIcon", "logoDark", "composerIconDark"])
+  assert.equal(codex.interface[field], claude.icon);
 const logo = readFileSync(packaged("assets/logo.png"));
 assert.deepEqual(
   logo.subarray(0, 8),
@@ -120,7 +106,6 @@ assert.equal(logo.toString("ascii", 12, 16), "IHDR");
 assert.equal(logo.readUInt32BE(16), 512);
 assert.equal(logo.readUInt32BE(20), 512);
 assert.ok(logo.length <= 5 * 1024 * 1024, "Logo must be at most 5 MiB");
-assert.ok(existsSync(packaged("assets/parcel-mark.svg")));
 assert.equal(codex.interface.defaultPrompt.length, 3);
 for (const prompt of codex.interface.defaultPrompt) {
   assert.ok(prompt.trim().length > 0, "Starter prompts must not be empty");
