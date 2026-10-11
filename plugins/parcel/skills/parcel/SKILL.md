@@ -17,6 +17,7 @@ Apply the common instructions below to every Parcel request. For a simple read, 
 | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
 | Read or organize saved information, edit account or Job data, or save an attached PDF | [organize job search](references/organize-job-search.md)           |
 | Add or update a Job from a posting URL or description                                 | [capture job posting](references/capture-job-posting.md)           |
+| Discover opportunities or triage supplied listings                                  | [discover opportunities](references/discover-opportunities.md)       |
 | Assess a Job against Job Preferences                                                  | [assess match](references/assess-match.md)                         |
 | Create or tailor a Job Resume                                                         | [prepare resume](references/prepare-resume.md)                     |
 | Draft or revise a Cover Letter                                                        | [prepare cover letter](references/prepare-cover-letter.md)         |
