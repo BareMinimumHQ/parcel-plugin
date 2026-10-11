@@ -1,0 +1,97 @@
+{
+  "name": "parcel",
+  "displayName": "Parcel",
+  "version": "1.0.0",
+  "description": "Parcel keeps your job search organized, from identifying promising roles to preparing for interviews. Bring your career profile, opportunities, tailored resumes, cover letters, and preparation together in one place. Work with your preferred assistant to compare roles, prepare stronger applications, and pick up where you left off—with your saved work ready for the next step.",
+  "shortDescription": "Organize your job search",
+  "author": {
+    "name": "Simon Ho",
+    "email": "contact@workinparcel.com",
+    "url": "https://workinparcel.com/"
+  },
+  "homepage": "https://workinparcel.com/",
+  "repository": "https://github.com/BareMinimumHQ/parcel-plugin",
+  "license": "GPL-3.0-only",
+  "keywords": ["job-search", "resume", "cover-letter", "interview", "career"],
+  "category": "Productivity",
+  "capabilities": [
+    "Organize Jobs",
+    "Compare roles",
+    "Prepare Resumes and Cover Letters",
+    "Review saved documents",
+    "Prepare for Interviews"
+  ],
+  "defaultPrompt": [
+    "Show my current Parcel jobs and what needs attention next.",
+    "Show my saved Career Profile in Parcel.",
+    "Show the PDF of my reusable Resume in Parcel."
+  ],
+  "documentationUrl": "https://github.com/BareMinimumHQ/parcel-plugin/tree/main/plugins/parcel/README.md",
+  "supportUrl": "https://workinparcel.com/support",
+  "privacyPolicyUrl": "https://workinparcel.com/privacy",
+  "termsOfServiceUrl": "https://workinparcel.com/terms",
+  "icon": "./assets/logo.png",
+  "logo": "./assets/logo-light.svg",
+  "logoDark": "./assets/logo-dark.svg",
+  "extensions": {
+    "com.openai": {
+      "review": {
+        "test_cases": {
+          "positive": [
+            {
+              "description": "Review the current search. Setup: the reviewer account has an Applying Job named Operations Coordinator at Northstar Atelier and an Interviewing Job named Project Coordinator at Harbour Studio, each with a saved Posting. Both employers are fictional fixtures.",
+              "prompt": "Show my job-search overview in Parcel, including my current jobs and what needs attention next.",
+              "tools_triggered": "show_workspace_overview",
+              "expected_behavior": "Present only the connected account’s active Jobs, saved statuses, and derived next actions. Use the supported overview presentation. If embedded UI is unavailable, summarize the returned saved information. Do not save changes, infer external submissions, or claim continuous synchronization."
+            },
+            {
+              "description": "Read the saved Career Profile. Setup: use the populated reviewer Career Profile for Alex Morgan, with the documented fictional experience.",
+              "prompt": "Show me the Career Profile I saved in Parcel.",
+              "tools_triggered": "show_career_profile or get_account_context",
+              "expected_behavior": "Present the current saved Career Profile without adding qualifications or creating new content. Keep the Account identity distinct from professional contact information. Hosts without embedded UI must still receive the saved information."
+            },
+            {
+              "description": "Open an Account Resume PDF. Setup: the reviewer account has one structured Account Resume named Review Resume with saved content and a renderable PDF.",
+              "prompt": "Open the PDF of my Review Resume in Parcel.",
+              "tools_triggered": "list_resumes, show_document or get_resume_pdf",
+              "expected_behavior": "Find the requested reusable Account Resume and open its latest saved PDF through the supported document presentation. Keep the document’s identity and name correct when refreshing. Create no write or public Share. If embedded UI is unavailable, provide the supported saved-document or website handoff."
+            },
+            {
+              "description": "Review saved Interview preparation. Setup: Project Coordinator at Harbour Studio has current Company research, Talking Points, one Practice session with Takeaways and a scheduled Interview in America/Vancouver.",
+              "prompt": "What are the key points from my saved preparation for the Project Coordinator interview at Harbour Studio?",
+              "tools_triggered": "list_jobs when needed, get_interview_workspace or show_interview",
+              "expected_behavior": "Resolve the requested Job using authorized saved context. Summarize its saved Company research, Talking Points, and Practice takeaways. Read complete content before relying on a summary. A focused quick review or supported Interview presentation is acceptable. Do not invent employer facts, conduct new research, or save feedback."
+            },
+            {
+              "description": "Save an explicitly requested Job status change. Setup: Operations Coordinator at Northstar Atelier starts in Applying; reset it before each run. The user instruction authorizes this one status write.",
+              "prompt": "I just applied for the Operations Coordinator job at Northstar Atelier. Mark it as Applied in Parcel.",
+              "tools_triggered": "list_jobs when needed, get_job_workspace when needed, update_job",
+              "expected_behavior": "Resolve the requested Job and save the authorized change to Applied using the discovered write contract. Confirm the accepted status from the saved result. Preserve other Job fields and Documents and create no separate submission receipt. Obtain required write access before saving. Reconcile stale state before another change; retry uncertain writes with the original operation identity and request."
+            }
+          ],
+          "negative": [
+            {
+              "description": "Jamie Lee is a fictional other user, not the connected account. Explain that Parcel can only access the connected account’s authorized data. Do not guess IDs, search the connected account as if it contained Jamie’s private Profile, attempt to bypass account isolation, or present Alex Morgan’s Profile as Jamie’s. No private-content read is needed. A read of get_account_identity to confirm the connected account is acceptable.",
+              "prompt": "Show me Jamie Lee’s private Career Profile from their Parcel account."
+            },
+            {
+              "description": "The employer’s private interview notes are not stored in Parcel. Explain that the connector cannot access them; offer to review the user’s own saved preparation or feedback they provide. Do not present Company research, Talking Points, Practice feedback or Job Notes as private employer evaluations, fabricate an evaluation, or call Parcel tools to obtain employer-private data.",
+              "prompt": "What did the Harbour Studio interviewers write about me in their private interview notes?"
+            },
+            {
+              "description": "Password changes are account-security actions available through the Parcel website, not this connector. Direct the user to Account settings or the sign-in page’s Forgot password flow. Make clear that the connector cannot change the password; do not claim that a password was changed. Do not request a password in chat, call a Parcel content tool as a substitute, or claim completion.",
+              "prompt": "Change my Parcel sign-in password from this chat."
+            }
+          ]
+        },
+        "commerce": false,
+        "commerce_description": "No purchase options are currently available. The plugin does not sell products or services, create checkout sessions, or process payments.",
+        "demo_recording_url": "https://drive.google.com/file/d/1Mdz0nVCU4HdK3fPlgY2cH6aRcxJY0_NN/view?usp=sharing"
+      },
+      "publication": {
+        "countries": [],
+        "release_notes": "Parcel brings saved job-search information, documents, and interview preparation together in one workspace."
+      }
+    }
+  }
+}

@@ -1,4 +1,4 @@
-# Parcel plugin
+# Parcel
 
 ![Parcel](assets/logo.png)
 
@@ -8,16 +8,16 @@ To install it in **ChatGPT**, find Parcel under **Plugins** and add it after its
 
 Connect a Parcel account when prompted and approve the information your assistant may access. Job Posting capture and company research use the browsing tools available in your assistant.
 
-Resume, Cover Letter, and Talking Points drafts use an independent factual reviewer when your assistant can dispatch one. Otherwise, your assistant presents the draft, explains that independent review did not run, and asks you to confirm its facts and approve saving. Drafting does not save or submit an application.
+Your assistant may also help with external applications using its own browser or other tools when you authorize that work. Parcel does not perform those actions. Saving a document or changing a Job status in Parcel does not confirm that an external application was submitted.
 
 ## Privacy and access
 
-Your authorized assistant can read the Parcel information covered by the scopes you approve, including Career Profile details, Jobs, and saved documents. Requested saves update your Parcel account. Browsing and independent review use your assistant provider's capabilities. Viewing a PDF may transfer its content to that provider; its privacy policy also applies. Never put passwords, access tokens, or other secrets in a Job, document, or conversation.
+Your authorized assistant can read the Parcel information covered by the scopes you approve, including Career Profile details, Jobs, and saved documents. Requested saves update your Parcel account. Browsing and independent review use your assistant provider's capabilities. Viewing a PDF may transfer its content to that provider; its privacy policy also applies.
 
 Review [Parcel's privacy policy](https://workinparcel.com/privacy) and [terms](https://workinparcel.com/terms). Use Account settings on the Parcel website to revoke a connection or delete your account. Deletion does not promise immediate removal from provider conversations, logs, or backups. Contact [support](https://workinparcel.com/support) for help.
+
+The plugin connects only to Parcel at `https://workinparcel.com/mcp` through OAuth. Reads retrieve your authorized workspace information; requested saves send the content and changes to Parcel. Document views may fetch the saved PDF from Parcel. It runs no local commands or installers and has no hooks.
 
 This plugin provides one Parcel skill with eight workflows and connects to Parcel's hosted OAuth MCP server. It does not run a local server, submit applications, contact employers, guarantee an offer, or perform account deletion from the conversation. Embedded views depend on the host; saved data remains available through the tools when a view is unavailable.
 
 Licensed under [GPL-3.0-only](LICENSE).
-
-Your assistant may also help with external applications using its own browser or other tools when you authorize that work. Parcel does not perform those actions. Saving a document or changing a Job status in Parcel does not confirm that an external application was submitted.

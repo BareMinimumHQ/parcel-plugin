@@ -23,6 +23,21 @@ assert.equal(claudeCatalog.plugins[0].name, "parcel");
 assert.equal(codexCatalog.plugins[0].policy.authentication, "ON_INSTALL");
 assert.equal(codex.name, "parcel");
 assert.equal(claude.name, "parcel");
+assert.equal(claude.displayName, codex.interface.displayName);
+assert.equal(claudeCatalog.plugins[0].displayName, claude.displayName);
+for (const field of [
+  "icon",
+  "documentationUrl",
+  "supportUrl",
+  "privacyPolicyUrl",
+  "termsOfServiceUrl",
+]) {
+  assert.equal(typeof claude[field], "string", `${field} must be text`);
+  if (field === "icon") {
+    assert.ok(claude[field].startsWith("./"));
+    assert.ok(existsSync(packaged(claude[field])));
+  } else assert.equal(new URL(claude[field]).protocol, "https:");
+}
 assert.equal(codex.version, claude.version);
 assert.equal(codex.license, "GPL-3.0-only");
 assert.equal(claude.license, codex.license);
@@ -200,7 +215,7 @@ assert.ok(prose.split(/\s+/).length >= 40);
 console.log("Portable manifests and directory metadata checks passed");
 
 for (const [path, expected] of Object.entries(
-  generatedManifests(portable, portableMcp),
+  generatedManifests(read("plugin.json"), portableMcp),
 )) {
   const actualPath = path.startsWith("plugins/parcel/")
     ? packaged(path.slice("plugins/parcel/".length))

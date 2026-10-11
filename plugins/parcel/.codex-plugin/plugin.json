@@ -1,7 +1,7 @@
 {
   "name": "parcel",
   "version": "1.0.0",
-  "description": "Parcel keeps your job search organized, from finding promising roles to preparing for interviews. Bring your career profile, opportunities, tailored resumes, cover letters, and preparation together in one place. Work with your preferred assistant to compare roles, prepare stronger applications, and pick up where you left off—with your saved work ready for the next step.",
+  "description": "Parcel keeps your job search organized, from identifying promising roles to preparing for interviews. Bring your career profile, opportunities, tailored resumes, cover letters, and preparation together in one place. Work with your preferred assistant to compare roles, prepare stronger applications, and pick up where you left off—with your saved work ready for the next step.",
   "author": {
     "name": "Simon Ho",
     "email": "contact@workinparcel.com",
@@ -15,7 +15,8 @@
   "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "Parcel",
-    "longDescription": "Parcel keeps your job search organized, from finding promising roles to preparing for interviews. Bring your career profile, opportunities, tailored resumes, cover letters, and preparation together in one place. Work with your preferred assistant to compare roles, prepare stronger applications, and pick up where you left off—with your saved work ready for the next step.",
+    "shortDescription": "Organize your job search",
+    "longDescription": "Parcel keeps your job search organized, from identifying promising roles to preparing for interviews. Bring your career profile, opportunities, tailored resumes, cover letters, and preparation together in one place. Work with your preferred assistant to compare roles, prepare stronger applications, and pick up where you left off—with your saved work ready for the next step.",
     "developerName": "Simon Ho",
     "category": "Productivity",
     "capabilities": [
@@ -25,50 +26,22 @@
       "Review saved documents",
       "Prepare for Interviews"
     ],
-    "websiteURL": "https://workinparcel.com/",
-    "privacyPolicyURL": "https://workinparcel.com/privacy",
-    "termsOfServiceURL": "https://workinparcel.com/terms",
     "defaultPrompt": [
       "Show my current Parcel jobs and what needs attention next.",
       "Show my saved Career Profile in Parcel.",
       "Show the PDF of my reusable Resume in Parcel."
     ],
+    "websiteURL": "https://workinparcel.com/",
+    "supportURL": "https://workinparcel.com/support",
+    "privacyPolicyURL": "https://workinparcel.com/privacy",
+    "termsOfServiceURL": "https://workinparcel.com/terms",
     "logo": "./assets/logo-light.svg",
     "composerIcon": "./assets/logo-light.svg",
-    "shortDescription": "Organize your job search",
-    "supportURL": "https://workinparcel.com/support",
     "logoDark": "./assets/logo-dark.svg",
     "composerIconDark": "./assets/logo-dark.svg"
   },
   "extensions": {
     "com.openai": {
-      "interface": {
-        "displayName": "Parcel",
-        "longDescription": "Parcel keeps your job search organized, from finding promising roles to preparing for interviews. Bring your career profile, opportunities, tailored resumes, cover letters, and preparation together in one place. Work with your preferred assistant to compare roles, prepare stronger applications, and pick up where you left off—with your saved work ready for the next step.",
-        "developerName": "Simon Ho",
-        "category": "Productivity",
-        "capabilities": [
-          "Organize Jobs",
-          "Compare roles",
-          "Prepare Resumes and Cover Letters",
-          "Review saved documents",
-          "Prepare for Interviews"
-        ],
-        "websiteURL": "https://workinparcel.com/",
-        "privacyPolicyURL": "https://workinparcel.com/privacy",
-        "termsOfServiceURL": "https://workinparcel.com/terms",
-        "defaultPrompt": [
-          "Show my current Parcel jobs and what needs attention next.",
-          "Show my saved Career Profile in Parcel.",
-          "Show the PDF of my reusable Resume in Parcel."
-        ],
-        "logo": "./assets/logo-light.svg",
-        "composerIcon": "./assets/logo-light.svg",
-        "shortDescription": "Organize your job search",
-        "supportURL": "https://workinparcel.com/support",
-        "logoDark": "./assets/logo-dark.svg",
-        "composerIconDark": "./assets/logo-dark.svg"
-      },
       "review": {
         "test_cases": {
           "positive": [
@@ -125,6 +98,33 @@
       "publication": {
         "countries": [],
         "release_notes": "Parcel brings saved job-search information, documents, and interview preparation together in one workspace."
+      },
+      "interface": {
+        "displayName": "Parcel",
+        "shortDescription": "Organize your job search",
+        "longDescription": "Parcel keeps your job search organized, from identifying promising roles to preparing for interviews. Bring your career profile, opportunities, tailored resumes, cover letters, and preparation together in one place. Work with your preferred assistant to compare roles, prepare stronger applications, and pick up where you left off—with your saved work ready for the next step.",
+        "developerName": "Simon Ho",
+        "category": "Productivity",
+        "capabilities": [
+          "Organize Jobs",
+          "Compare roles",
+          "Prepare Resumes and Cover Letters",
+          "Review saved documents",
+          "Prepare for Interviews"
+        ],
+        "defaultPrompt": [
+          "Show my current Parcel jobs and what needs attention next.",
+          "Show my saved Career Profile in Parcel.",
+          "Show the PDF of my reusable Resume in Parcel."
+        ],
+        "websiteURL": "https://workinparcel.com/",
+        "supportURL": "https://workinparcel.com/support",
+        "privacyPolicyURL": "https://workinparcel.com/privacy",
+        "termsOfServiceURL": "https://workinparcel.com/terms",
+        "logo": "./assets/logo-light.svg",
+        "composerIcon": "./assets/logo-light.svg",
+        "logoDark": "./assets/logo-dark.svg",
+        "composerIconDark": "./assets/logo-dark.svg"
       }
     }
   }
