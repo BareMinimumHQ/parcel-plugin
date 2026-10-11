@@ -13,6 +13,26 @@
   "repository": "https://github.com/BareMinimumHQ/parcel-plugin",
   "license": "GPL-3.0-only",
   "keywords": ["job-search", "resume", "cover-letter", "interview", "career"],
+  "category": "Productivity",
+  "capabilities": [
+    "Organize Jobs",
+    "Compare roles",
+    "Prepare Resumes and Cover Letters",
+    "Review saved documents",
+    "Prepare for Interviews"
+  ],
+  "defaultPrompt": [
+    "Show my current Parcel jobs and what needs attention next.",
+    "Show my saved Career Profile in Parcel.",
+    "Show the PDF of my reusable Resume in Parcel."
+  ],
+  "documentationUrl": "https://github.com/BareMinimumHQ/parcel-plugin/tree/main/plugins/parcel/README.md",
+  "supportUrl": "https://workinparcel.com/support",
+  "privacyPolicyUrl": "https://workinparcel.com/privacy",
+  "termsOfServiceUrl": "https://workinparcel.com/terms",
+  "icon": "./assets/logo.png",
+  "logo": "./assets/logo-light.svg",
+  "logoDark": "./assets/logo-dark.svg",
   "extensions": {
     "com.openai": {
       "review": {
@@ -73,25 +93,5 @@
         "release_notes": "Parcel brings saved job-search information, documents, and interview preparation together in one workspace."
       }
     }
-  },
-  "category": "Productivity",
-  "capabilities": [
-    "Organize Jobs",
-    "Compare roles",
-    "Prepare Resumes and Cover Letters",
-    "Review saved documents",
-    "Prepare for Interviews"
-  ],
-  "defaultPrompt": [
-    "Show my current Parcel jobs and what needs attention next.",
-    "Show my saved Career Profile in Parcel.",
-    "Show the PDF of my reusable Resume in Parcel."
-  ],
-  "documentationUrl": "https://github.com/BareMinimumHQ/parcel-plugin/tree/main/plugins/parcel/README.md",
-  "supportUrl": "https://workinparcel.com/support",
-  "privacyPolicyUrl": "https://workinparcel.com/privacy",
-  "termsOfServiceUrl": "https://workinparcel.com/terms",
-  "icon": "./assets/logo.png",
-  "logo": "./assets/logo-light.svg",
-  "logoDark": "./assets/logo-dark.svg"
+  }
 }
