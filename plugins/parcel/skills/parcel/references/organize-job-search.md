@@ -2,9 +2,9 @@
 
 Use the `parcel` MCP tools for current account information. Use an applicable current read or confirmed save result, its server-assigned references, and its saved-state guards. Fetch missing or outdated context and reconcile conflicting changes; summarize the confirmed saved outcome without technical versions. If authorization has expired, ask the person to reconnect Parcel; do not infer private data from the skill or claim an unsaved change succeeded.
 
-The person chooses which jobs to pursue. Parcel holds the workspace; it does not submit applications. Keep prepared text, saved documents, and external actions distinct. Ask before replacing existing content when the intended change is unclear. Do not treat a Job marked Applied as proof of an external submission.
+The person chooses which jobs to pursue. Parcel holds the workspace. Keep prepared text, saved documents, and external actions distinct. Ask before replacing existing content when the intended change is unclear. Do not treat a Job marked Applied as proof of an external submission.
 
-For a new Job, use the bounded Job creation tool and its confirmed saved result; read more workspace context only when needed. For an existing Job, first find it by the person's description, then use the matching read or update tool for the requested stage. For documents, distinguish an editable Resume or Cover Letter from a generated PDF or uploaded artifact. For interviews and notes, use the current Job workspace rather than making a separate timeline.
+For a new Job, use the bounded Job creation tool and its confirmed saved result; read more workspace context when needed. For an existing Job, first find it by the person's description, then use the matching read or update tool for the requested stage. For documents, distinguish an editable Resume or Cover Letter from a generated PDF or uploaded artifact. For interviews and notes, use the current Job workspace.
 
 Never invent tool names, IDs, revisions, or success states. If the available Parcel tools do not cover a requested action, explain the missing action and offer a website handoff.
 
@@ -23,6 +23,12 @@ Deleting a populated field can remove valuable content. Obtain authorization for
 ## Account Name and Public address
 
 Account Name is optional account identity, not a Career Profile field or a historical document name. Read and change it through current discovered account capabilities. A name change leaves saved document names unchanged. Public Resume address and sharing are separate actions; changing the address makes old sharing links stop working. Changing sharing metadata does not authorize publication.
+
+## Document writing preferences
+
+Keep the free Account writing preferences separate from document appearance and Job Preferences. Resume preferences include an optional one- or two-page target and Resume writing guidance; Cover Letter preferences have their own writing guidance. An unset Resume target means no saved preference. Read the complete current preferences before changing them, apply only the authorized change, and preserve the other document's guidance. Follow current operation bounds, conflict protection, and safe retry rules. Clearing guidance or a page target must be intentional.
+
+These preferences guide future preparation. Saving them does not revise existing documents, change template or typography, or authorize removing approved content. Apply a request-specific override to the current task without saving it as a permanent preference unless the person authorizes that change.
 
 ## Job Preferences
 
