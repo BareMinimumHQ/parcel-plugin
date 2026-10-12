@@ -24,6 +24,12 @@ Deleting a populated field can remove valuable content. Obtain authorization for
 
 Account Name is optional account identity, not a Career Profile field or a historical document name. Read and change it through current discovered account capabilities. A name change leaves saved document names unchanged. Public Resume address and sharing are separate actions; changing the address makes old sharing links stop working. Changing sharing metadata does not authorize publication.
 
+## Document writing preferences
+
+Keep the free Account writing preferences separate from document appearance and Job Preferences. Resume preferences include an optional one- or two-page target and Resume writing guidance; Cover Letter preferences have their own writing guidance. An unset Resume target means no saved preference. Read the complete current preferences before changing them, apply only the authorized change, and preserve the other document's guidance. Follow current operation bounds, conflict protection, and safe retry rules. Clearing guidance or a page target must be intentional.
+
+These preferences guide future preparation. Saving them does not revise existing documents, change template or typography, or authorize removing approved content. Apply a request-specific override to the current task without saving it as a permanent preference unless the person authorizes that change.
+
 ## Job Preferences
 
 Keep Requirements, Priorities, and Search distinct. Requirements record objective assessment inputs. Priorities record subjective outcomes and their weights. Search is optional direction for finding and reviewing opportunities: target titles, industries, preferred or excluded companies, company sizes, posting age, desired work and responsibilities, and screening guidance. Search does not create Match Filters, scores, or readiness rules.
