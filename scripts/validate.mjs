@@ -169,7 +169,7 @@ assert.equal(portableMcp.mcpServers.parcel.type, "streamable-http");
 assert.equal(portableMcp.mcpServers.parcel.url, mcp.mcpServers.parcel.url);
 assert.equal(Object.keys(portableMcp.mcpServers).length, 1);
 assert.equal(readdirSync(packaged("skills")).length, 1);
-assert.equal(readdirSync(packaged("skills/parcel/references")).length, 8);
+assert.equal(readdirSync(packaged("skills/parcel/references")).length, 9);
 for (const prompt of codex.interface.defaultPrompt)
   assert.ok(prompt.length <= 128 && !prompt.includes("\n"));
 const { review, publication } = portable.extensions["com.openai"];

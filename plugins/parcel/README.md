@@ -41,6 +41,6 @@ Review [Parcel's privacy policy](https://workinparcel.com/privacy) and [terms](h
 
 The plugin connects only to Parcel at `https://workinparcel.com/mcp` through OAuth. Reads retrieve your authorized workspace information; requested saves send the content and changes to Parcel. Document views may fetch the saved PDF from Parcel. It runs no local commands or installers and has no hooks.
 
-This plugin provides one Parcel skill with eight workflows and connects to Parcel's hosted OAuth MCP server. It does not run a local server, submit applications, contact employers, guarantee an offer, or perform account deletion from the conversation. Embedded views depend on the host; saved data remains available through the tools when a view is unavailable.
+This plugin provides one Parcel skill with nine workflows and connects to Parcel's hosted OAuth MCP server. It does not run a local server, submit applications, contact employers, guarantee an offer, or perform account deletion from the conversation. Embedded views depend on the host; saved data remains available through the tools when a view is unavailable.
 
 Licensed under [GPL-3.0-only](https://github.com/BareMinimumHQ/parcel-plugin/blob/main/plugins/parcel/LICENSE).
