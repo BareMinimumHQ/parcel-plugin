@@ -1,39 +1,27 @@
 # Organize a job search in Parcel
 
-Use the `parcel` MCP tools for current account information. Use an applicable current read or confirmed save result, its server-assigned references, and its saved-state guards. Fetch missing or outdated context and reconcile conflicting changes; summarize the confirmed saved outcome without technical versions. If authorization has expired, ask the person to reconnect Parcel; do not infer private data from the skill or claim an unsaved change succeeded.
+Identify the requested Account or Job information and use its current discovered capabilities under the shared read, authorization and save rules. For an existing Job, find the intended record and stage; for a new Job, use its confirmed creation result as the starting point. Distinguish editable content, generated PDFs and immutable uploaded artifacts.
 
-The person chooses which jobs to pursue. Parcel holds the workspace. Keep prepared text, saved documents, and external actions distinct. Ask before replacing existing content when the intended change is unclear. Do not treat a Job marked Applied as proof of an external submission.
+## PDFs and focused edits
 
-For a new Job, use the bounded Job creation tool and its confirmed saved result; read more workspace context when needed. For an existing Job, first find it by the person's description, then use the matching read or update tool for the requested stage. For documents, distinguish an editable Resume or Cover Letter from a generated PDF or uploaded artifact. For interviews and notes, use the current Job workspace.
+Save an attached PDF as an Account Resume when requested; providing a source for another task is not permission to store or replace it. This stores the original PDF, not extracted editable content. Follow the host-supported transfer path or offer website upload. A prepared transfer is not a saved Resume.
 
-Never invent tool names, IDs, revisions, or success states. If the available Parcel tools do not cover a requested action, explain the missing action and offer a website handoff.
+Describe document changes in terms of sections, fields, items, values and order. Preserve current identities when relabeling or editing saved content; Parcel constructs new records. Adding, moving, copying, clearing and deleting have different effects. In particular, deleting a populated field can discard valuable content, while a missing value does not mean “clear it.” Ensure those effects match the authorized request.
 
-## Save an attached PDF
+## Account identity and sharing
 
-Save an attached PDF as an Account Resume only when the person requests it. This stores the original PDF, not extracted editable content. Attaching a source for another task does not authorize saving or replacement. For replacement, identify the existing Resume and explain the intended effect when unclear.
-
-Use a current discovered transfer capability supported by the host. Local files and chat attachments may require different transfer paths; follow the live operation requirements instead of guessing. If transfer is unavailable, offer website upload. A prepared transfer is not a saved Resume. Confirm the save result and follow the common safe retry and conflict rules.
-
-## Focused document changes
-
-Express the intended edits in terms of sections, fields, items, values, and order. Use current saved references to identify existing content. Parcel assigns identifiers and constructs valid new content. Preserve unrelated values and sections. Distinguish adding, changing, moving, copying, clearing, and deleting content, and use current discovered capabilities for each supported action.
-
-Deleting a populated field can remove valuable content. Obtain authorization for that effect when it is not already clear from the request. Changing a field label should preserve its identity and values. Do not infer that a missing value means the person wants it cleared. Group related edits within current operation bounds and follow the common conflict and safe retry rules.
-
-## Account Name and Public address
-
-Account Name is optional account identity, not a Career Profile field or a historical document name. Read and change it through current discovered account capabilities. A name change leaves saved document names unchanged. Public Resume address and sharing are separate actions; changing the address makes old sharing links stop working. Changing sharing metadata does not authorize publication.
+Account Name is optional Account identity, separate from Career Profile contact details and historical document names. Changing it affects future document defaults, not saved document names. Public address and Resume sharing are separate actions: an address change breaks old sharing links, and editing sharing metadata does not itself authorize publication.
 
 ## Document writing preferences
 
-Keep the free Account writing preferences separate from document appearance and Job Preferences. Resume preferences include an optional one- or two-page target and Resume writing guidance; Cover Letter preferences have their own writing guidance. An unset Resume target means no saved preference. Read the complete current preferences before changing them, apply only the authorized change, and preserve the other document's guidance. Follow current operation bounds, conflict protection, and safe retry rules. Clearing guidance or a page target must be intentional.
+Free Account writing preferences are separate from appearance and Job Preferences. Resume guidance includes an optional one- or two-page target; Cover Letter guidance is independent. An unset target means no saved page preference. Read the complete preferences for an authorized edit and preserve the other document's guidance; clearing text or a target must be intentional.
 
-These preferences guide future preparation. Saving them does not revise existing documents, change template or typography, or authorize removing approved content. Apply a request-specific override to the current task without saving it as a permanent preference unless the person authorizes that change.
+Saving these settings guides future preparation without rewriting documents or changing appearance. Request-specific overrides apply to the current task unless the person authorizes a permanent preference change.
 
 ## Job Preferences
 
-Keep Requirements, Priorities, and Search distinct. Requirements record objective assessment inputs. Priorities record subjective outcomes and their weights. Search is optional direction for finding and reviewing opportunities: target titles, industries, preferred or excluded companies, company sizes, posting age, desired work and responsibilities, and screening guidance. Search does not create Match Filters, scores, or readiness rules.
+Requirements describe objective assessment inputs; Priorities describe weighted subjective outcomes. Optional Search records discovery direction such as titles, industries, companies, company sizes, posting age, desired work and screening guidance. Search does not create Match Filters, scores or readiness rules.
 
-Before changing Job Preferences, read their complete current content and identify the authorized change. Use the current discovered bounded update capability. Update only the authorized preference sections: leaving a section out preserves it, providing a section replaces its complete content, and an explicit empty section clears it. Within each section being replaced, preserve unrelated content, including existing Priority identities and weights. Follow the common retry and conflict rules; do not rebuild preferences from a summary or silently discard another edit.
+Read complete current preferences before an authorized change. Omitted sections retain saved content; supplied sections replace their complete content, and explicit empty sections clear them. Preserve unrelated details within replacements, including Priority identities and weights. Task-specific exceptions do not become permanent preferences without authorization.
 
-Distinguish a task-specific exception from a reusable preference change. Apply a requested exception to the current task without saving it as a permanent rule. Persist direction only when the person authorizes that change. Missing Search direction does not block capturing a supplied Job posting. For selecting new opportunities, read [discover opportunities](discover-opportunities.md) and ask only for essential missing direction.
+Missing Search direction does not block capturing a supplied posting. For opportunity selection, use [discover opportunities](discover-opportunities.md) and ask only for essential missing direction.
