@@ -8,6 +8,8 @@ When changing either repository, assess the effect on the other and update both 
 
 For incompatible changes, identify the affected workflows and coordinate delivery so supported packages remain usable; do not assume tool discovery immediately refreshes every installed package or provider-held definition.
 
+During provider review, follow the application's [Changes during provider review](https://github.com/thesimonho/parcel/blob/main/docs/plugin-distribution/workflow-contracts.md#changes-during-provider-review) policy. Keep the submitted OpenAI v1.1.1 package usable. Optional skill improvements may be released without resubmission; defer changes that need a replacement submission for the integration to work. This contributor policy is excluded from the installed package.
+
 Keep the relevant contract and alignment checks current, and review compatibility before accepting changes to their expectations.
 
 - Use the current public operation definitions, server behavior, and relevant tests to confirm that each workflow remains achievable. Check authorization, preservation, conflict handling, and result meaning; a valid payload alone does not prove the workflow is correct.
