@@ -8,7 +8,7 @@ When changing either repository, assess the effect on the other and update both 
 
 For incompatible changes, identify the affected workflows and coordinate delivery so supported packages remain usable; do not assume tool discovery immediately refreshes every installed package or provider-held definition.
 
-During provider review, follow the application's [Changes during provider review](https://github.com/thesimonho/parcel/blob/main/docs/plugin-distribution/workflow-contracts.md#changes-during-provider-review) policy. Keep the submitted OpenAI v1.1.1 package usable. Optional skill improvements may be released without resubmission; defer changes that need a replacement submission for the integration to work. This contributor policy is excluded from the installed package.
+Follow the application's permanent [release compatibility policy](https://github.com/thesimonho/parcel/blob/main/docs/plugin-distribution/workflow-contracts.md#release-compatibility). Keep supported packages usable during provider review and user rollout. Label dependent changes `coordinated-release` and ship compatible server support before distributing new guidance; retiring old behavior requires a separate support decision. The submitted OpenAI v1.1.1 package remains the current floor. Automated checks protect explicit contracts, not natural-language workflow meaning: paired review must assess both supported and candidate guidance against real server behavior and record dependencies and limitations. This contributor policy is excluded from the installed package.
 
 Keep the relevant contract and alignment checks current, and review compatibility before accepting changes to their expectations.
 
