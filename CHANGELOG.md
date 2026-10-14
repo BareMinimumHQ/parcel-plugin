@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/BareMinimumHQ/parcel-plugin/compare/v1.1.1...v1.1.2) (2026-10-14)
+
+
+### Bug Fixes
+
+* clarify shared workflow guidance ([#13](https://github.com/BareMinimumHQ/parcel-plugin/issues/13)) ([a012b8e](https://github.com/BareMinimumHQ/parcel-plugin/commit/a012b8e7a5340d4928b7799d6848786bad3fc69f))
+
 ## [1.1.1](https://github.com/BareMinimumHQ/parcel-plugin/compare/v1.1.0...v1.1.1) (2026-10-13)
 
 
