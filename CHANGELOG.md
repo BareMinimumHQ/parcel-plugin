@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.3](https://github.com/BareMinimumHQ/parcel-plugin/compare/v1.1.2...v1.1.3) (2026-10-23)
+
+
+### Documentation
+
+* add Muse setup guidance ([#17](https://github.com/BareMinimumHQ/parcel-plugin/issues/17)) ([649f856](https://github.com/BareMinimumHQ/parcel-plugin/commit/649f856b79801c5a5920b4940f525e288e7cf864))
+* align release policy ([#15](https://github.com/BareMinimumHQ/parcel-plugin/issues/15)) ([ce1814a](https://github.com/BareMinimumHQ/parcel-plugin/commit/ce1814a2f70f54cb98c17693bcf6d7212ec0d051))
+
 ## [1.1.2](https://github.com/BareMinimumHQ/parcel-plugin/compare/v1.1.1...v1.1.2) (2026-10-14)
 
 
