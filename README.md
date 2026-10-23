@@ -1,6 +1,6 @@
 # Parcel
 
-[Parcel](https://workinparcel.com/) helps you organize your job search. Compare roles, tailor resumes and cover letters, research companies, and practise interviews with your connected assistant. Install Parcel in ChatGPT, Codex, Claude, or Claude Code using the instructions below. After installation, sign in to Parcel and choose the access you want to give your assistant.
+[Parcel](https://workinparcel.com/) helps you organize your job search. Compare roles, tailor resumes and cover letters, research companies, and practise interviews with your connected assistant. Install Parcel in ChatGPT, Codex, Claude, Claude Code, or Muse using the instructions below. After installation, sign in to Parcel and choose the access you want to give your assistant.
 
 ## ChatGPT
 
@@ -32,6 +32,16 @@ claude plugin install parcel@parcel
 ```
 
 Connect your Parcel account in your browser when prompted and review the requested access.
+
+## Muse
+
+Ask Muse to go to https://github.com/BareMinimumHQ/parcel-plugin and install the Parcel MCP connector and skills. When prompted, sign in to Parcel, review the requested access, and approve the connection.
+
+Muse should use dynamic client registration. If its Connect page asks for a Client ID, paste `jwpGPKTxmyTXXluTDLjHypTbUXxwsnpS`. This is Parcel's public OAuth client ID for Muse; no client secret is needed. You still need to sign in to Parcel and approve access.
+
+## MCP server
+
+The remote MCP URL is `https://workinparcel.com/mcp`. Use OAuth to connect your Parcel account.
 
 ## Privacy and access
 
