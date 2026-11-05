@@ -1,21 +1,21 @@
 # Agents
 
-When changing anything in this repository, review both sides of the Parcel MCP contract: this plugin's skills and instructions, and the corresponding server tools and behavior in the Parcel application repository.
+When a change affects a shared Agent workflow, review the relevant plugin guidance alongside the corresponding server tools and behavior in the Parcel application repository.
 
 Treat the agent interface as an evolving public contract. New capabilities and compatible additions are welcome; preserve existing calls and their meaning where possible.
 
-When changing either repository, assess the effect on the other and update both when required.
+Assess cross-repository effects when relevant and update both repositories when a working change requires it. Independent changes use the normal checks for their repository.
 
 For incompatible changes, identify the affected workflows and coordinate delivery so supported packages remain usable; do not assume tool discovery immediately refreshes every installed package or provider-held definition.
 
-Follow the application's permanent [release compatibility policy](https://github.com/thesimonho/parcel/blob/main/docs/plugin-distribution/workflow-contracts.md#release-compatibility). Keep supported packages usable during provider review and user rollout. Label dependent changes `coordinated-release` and ship compatible server support before distributing new guidance; retiring old behavior requires a separate support decision. The submitted OpenAI v1.1.1 package remains the current floor. Automated checks protect explicit contracts, not natural-language workflow meaning: paired review must assess both supported and candidate guidance against real server behavior and record dependencies and limitations. This contributor policy is excluded from the installed package.
+Follow the application's [release compatibility policy](https://github.com/thesimonho/parcel/blob/main/docs/plugin-distribution/workflow-contracts.md#release-compatibility). Use `coordinated-release` when a change requires both the plugin and application repositories to change, and record the safe order and provider review or distribution dependencies. Ordinary changes to one side use that repository's normal checks. A server deployment can precede provider refresh of its MCP definitions; assess the impact on users during that interval. Plugin guidance updates follow each provider's package review and distribution process. Automated alignment checks cannot prove natural-language workflow behavior, provider acceptance, or installed versions. This contributor policy is excluded from the installed package.
 
 Keep the relevant contract and alignment checks current, and review compatibility before accepting changes to their expectations.
 
 - Use the current public operation definitions, server behavior, and relevant tests to confirm that each workflow remains achievable. Check authorization, preservation, conflict handling, and result meaning; a valid payload alone does not prove the workflow is correct.
 - Keep skills focused on outcomes, product rules, evidence standards, and user intent. Exact operation names, argument fields, payload modes, response paths, and storage bookkeeping belong outside bundled workflow guidance. Use discovered operation requirements for current mechanics.
 - Check the shared skill and all affected workflow references for conflicting or outdated guidance. Update both repositories when a change requires it.
-- If the Parcel repository is unavailable, state that the server-side review could not be completed. Do not claim that both sides agree.
+- If a shared workflow requires review and the Parcel repository is unavailable, state that the server-side review could not be completed. Do not claim that both sides agree.
 - Run the relevant checks in each changed repository. Plugin guidance changes need a plugin release to reach provider-distributed packages; merging main alone does not update installed plugins.
 
 ## Development and releases
