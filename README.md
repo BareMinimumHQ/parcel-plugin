@@ -47,7 +47,7 @@ The remote MCP URL is `https://workinparcel.com/mcp`. Use OAuth to connect your 
 
 Your authorized assistant can read the Parcel information covered by the scopes you approve, including Career Profile details, Jobs, and saved documents. Requested saves update your Parcel account. Browsing and independent review use your assistant provider's capabilities. Viewing a PDF may transfer its content to that provider; its privacy policy also applies.
 
-Review [Parcel's privacy policy](https://workinparcel.com/privacy) and [terms](https://workinparcel.com/terms). Use Account settings on the Parcel website to revoke a connection or delete your account. Deletion does not promise immediate removal from provider conversations, logs, or backups. Contact [support](https://workinparcel.com/support) for help.
+Review [Parcel's privacy policy](https://workinparcel.com/privacy) and [terms](https://workinparcel.com/terms). Use Account settings on the Parcel website to revoke a connection or delete your account. Deletion does not promise immediate removal from provider conversations, logs, or backups. Visit [Help](https://workinparcel.com/help) for support.
 
 The plugin connects only to Parcel at `https://workinparcel.com/mcp` through OAuth. Reads retrieve your authorized workspace information; requested saves send the content and changes to Parcel. Document views may fetch the saved PDF from Parcel. It runs no local commands or installers and has no hooks.
 
