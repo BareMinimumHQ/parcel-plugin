@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.4](https://github.com/BareMinimumHQ/parcel-plugin/compare/v1.1.3...v1.1.4) (2026-11-10)
+
+
+### Bug Fixes
+
+* point support links to Help ([#20](https://github.com/BareMinimumHQ/parcel-plugin/issues/20)) ([281ff43](https://github.com/BareMinimumHQ/parcel-plugin/commit/281ff438af25355b6f2fae076cba5e52c277ed81))
+
+
+### Documentation
+
+* simplify release guidance ([#18](https://github.com/BareMinimumHQ/parcel-plugin/issues/18)) ([7da4db0](https://github.com/BareMinimumHQ/parcel-plugin/commit/7da4db0079b76ae859ef07fd80e945fd5d35a4c1))
+
 ## [1.1.3](https://github.com/BareMinimumHQ/parcel-plugin/compare/v1.1.2...v1.1.3) (2026-10-23)
 
 
