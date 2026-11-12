@@ -7,3 +7,5 @@ Use the appropriate starting point: existing Job content, a blank structured Res
 Select the strongest supported connections to the role, with concrete experience, outcomes and relevance. Keep the actual technologies and scope when showing transferable capability. Explain material gaps and ask for missing evidence. Develop a focused content proposal rather than repeating every keyword or imposing a fixed number of connections.
 
 Show material changes and open questions for review, including the basis for a creation or copy.
+
+Use the shared draft-rendering loop to check length before an authorized save. Saved content and unsaved proposals use the same document renderer; a prepared PDF address alone is not evidence of rendering or fit.
