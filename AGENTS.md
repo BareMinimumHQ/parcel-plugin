@@ -24,6 +24,8 @@ Edit the repository-root README.md for user documentation; plugins/parcel/README
 
 Edit shared metadata in the repository-root `plugin.json`. Packaged manifests and marketplace catalogs are generated; do not edit them directly. Run `node scripts/sync-manifests.mjs --write` after metadata changes, then `node scripts/validate.mjs` for package checks. See `scripts/README.md` for the provider mappings and submission checks.
 
+For a shared app/plugin change, keep the plugin PR open and unmerged as its staging candidate. The app checks that exact plugin commit through `PARCEL_PLUGIN_REVISION`; do not merge plugin guidance solely to satisfy app CI. Verify staging MCP with the candidate package or skills in Codex CLI or Claude Code, and record the exact tested app/plugin commits in the private delivery record. Follow the application's [coordinated staging gate](https://github.com/thesimonho/parcel/blob/main/docs/plugin-distribution/workflow-contracts.md#coordinated-staging-gate). After acceptance and authorization, release the compatible app first, then merge and release the tested plugin candidate. Leave pending provider review connections intact; CLI verification does not establish provider acceptance or installation.
+
 Merging a plugin fix or documentation change into main lets Release Please prepare a release PR. Merging that release PR cuts the version and attaches inspected packages.
 
 Guidance changes need a plugin release to reach provider-distributed packages; website-only changes do not require a plugin release. Provider publication and user updates follow each provider's distribution process.
