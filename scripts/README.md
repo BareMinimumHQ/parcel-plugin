@@ -53,7 +53,7 @@ For coordinated server and guidance changes, keep the plugin PR open as the
 staging candidate and pin its exact commit in app CI. Verify the staging MCP
 server with those candidate skills through Codex or Claude Code, recording both
 commits and the observed results in the private delivery record. Follow the
-[paired release gate](https://github.com/thesimonho/parcel/blob/main/docs/plugin-distribution/workflow-contracts.md#release-compatibility):
+[paired release gate](https://github.com/thesimonho/parcel/blob/main/docs/plugin-distribution/workflow-contracts.md#coordinated-staging-gate):
 promote the verified app first, then merge and release the tested plugin
 candidate through Release Please. Provider review and installation are separate;
 do not replace pending provider connections to perform this gate.
