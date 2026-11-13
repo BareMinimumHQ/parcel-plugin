@@ -13,6 +13,8 @@ Use an authorized Parcel MCP connection. The website and MCP cover the same save
 
 Use discovered capabilities directly for simple reads. For preparation or changes, load the relevant references below and apply the shared guidance in this skill. Load only what the request needs; it may span several workflows.
 
+For broad requests, identify the relevant outcomes from the request and available workflows. Ask about material gaps or choices as soon as they become clear, and continue other authorized work while awaiting answers.
+
 | Request                                                             | Reference                                                          |
 | ------------------------------------------------------------------- | ------------------------------------------------------------------ |
 | Organize saved information, edit Account or Job data, or save a PDF | [Organize job search](references/organize-job-search.md)           |
