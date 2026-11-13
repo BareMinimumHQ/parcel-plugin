@@ -11,3 +11,5 @@ Select the strongest supported connections to the role, with concrete experience
 Show material changes and open questions for review, including the basis for a creation or copy.
 
 Use the shared draft-rendering loop to check length before an authorized save. Saved content and unsaved proposals use the same document renderer; a prepared PDF address alone is not evidence of rendering or fit.
+
+Treat the requested page count as a content budget. Use the space well for relevant, supported evidence without padding. Check for excessive cuts, large unused areas and a sparse final page; page count alone does not establish a well-fitted Resume.
