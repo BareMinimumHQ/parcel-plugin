@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/BareMinimumHQ/parcel-plugin/compare/v1.1.4...v1.2.0) (2026-11-13)
+
+
+### Features
+
+* improve document workflows ([#21](https://github.com/BareMinimumHQ/parcel-plugin/issues/21)) ([0b3de62](https://github.com/BareMinimumHQ/parcel-plugin/commit/0b3de62174a565fd913bcf25a62d77e2478ebeb6))
+
 ## [1.1.4](https://github.com/BareMinimumHQ/parcel-plugin/compare/v1.1.3...v1.1.4) (2026-11-10)
 
 
