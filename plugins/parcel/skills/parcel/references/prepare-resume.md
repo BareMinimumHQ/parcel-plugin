@@ -1,9 +1,15 @@
 # Prepare a Job Resume
 
-Read the Job, Saved Job Posting, current Job Resume, relevant Career Profile and reusable Account Resumes. Identify the authoritative experience source; ask for experience or a source Resume when none is usable.
+Read the Job, Saved Job Posting and relevant Career Profile. Ask for missing career information or a source Resume when no usable evidence is available.
 
-Use the appropriate starting point: existing Job content, a blank structured Resume or an Account Resume copy. Account and Job Resumes are independent; tailoring a Job Resume must preserve its reusable source. Copying over saved Job work or replacing an uploaded PDF is a material replacement: make its effect clear and ensure it is authorized. Uploaded PDFs are immutable content, not editable fields.
+For a new Job Resume with no established starting point, look up reusable Account Resume summaries before drafting. If candidates exist, ask whether to build from the Career Profile or adapt one of those Resumes, using their returned names, and wait for the choice. Read the full selected Resume only after selection. If none exist, start from the Career Profile when it has usable evidence.
+
+Preserve useful existing Job Resume content when revising. Account and Job Resumes are independent; tailoring a Job Resume must preserve its reusable source. Copying over saved Job work or replacing an uploaded PDF is a material replacement: make its effect clear and ensure it is authorized. Uploaded PDFs are immutable content, not editable fields.
 
 Select the strongest supported connections to the role, with concrete experience, outcomes and relevance. Keep the actual technologies and scope when showing transferable capability. Explain material gaps and ask for missing evidence. Develop a focused content proposal rather than repeating every keyword or imposing a fixed number of connections.
 
 Show material changes and open questions for review, including the basis for a creation or copy.
+
+Use the shared draft-rendering loop to check length before an authorized save. Saved content and unsaved proposals use the same document renderer; a prepared PDF address alone is not evidence of rendering or fit.
+
+Treat the requested page count as a content budget. Use the space well for relevant, supported evidence without padding. Check for excessive cuts, large unused areas and a sparse final page; page count alone does not establish a well-fitted Resume.

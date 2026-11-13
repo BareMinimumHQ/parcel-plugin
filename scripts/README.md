@@ -49,6 +49,15 @@ Validation checks generated metadata against the source, including archives afte
 
 Release Please owns versions and tags. It updates the repository-root source; the release workflow regenerates and commits all packaged manifests on the release PR. The tagged release must already contain those generated files. Do not bump a generated version or create a tag manually.
 
+For coordinated server and guidance changes, keep the plugin PR open as the
+staging candidate and pin its exact commit in app CI. Verify the staging MCP
+server with those candidate skills through Codex or Claude Code, recording both
+commits and the observed results in the private delivery record. Follow the
+[paired release gate](https://github.com/thesimonho/parcel/blob/main/docs/plugin-distribution/workflow-contracts.md#coordinated-staging-gate):
+promote the verified app first, then merge and release the tested plugin
+candidate through Release Please. Provider review and installation are separate;
+do not replace pending provider connections to perform this gate.
+
 ## Claude submission
 
 Submit the bundle with repository `BareMinimumHQ/parcel-plugin` and plugin path `plugins/parcel`. Submit the hosted server separately as an MCP connector at `https://workinparcel.com/mcp`, from the same Claude organization. A remote MCP reference in the bundle does not register a connector. Use the exact same URL in both submissions so the listings can be paired without duplicate tools.
