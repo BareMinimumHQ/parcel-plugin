@@ -37,7 +37,7 @@ Use relevant saved context and earlier answers first. If missing information or 
 
 Act within the person's authorized request. Preserve unrelated saved work, and clarify an ambiguous replacement or deletion before proceeding. Do not add confirmation steps to an already authorized change. Content edits, appearance changes, copying, publication and external actions have separate effects; authority for one does not imply the others. Group related edits when supported. Account-security actions belong on the website; never request a password in chat.
 
-For operations that advertise JSON Patch, read the [JSON Patch reference](references/json-patch.md) before constructing a mutation. Draft the complete intended revised item, section or list locally for a substantial rewrite, then replace that value. Keep isolated field edits focused.
+Updates to saved resources use JSON Patch. Read the [JSON Patch reference](references/json-patch.md) before constructing an update. Draft the complete intended revised item, section or list locally for a substantial rewrite, then replace that value. Keep isolated field edits focused.
 
 Follow the discovered retry contract after an uncertain write, keeping its retry identity and intended content unchanged. If safe replay is unavailable, establish what was saved before writing again. On a conflict, read and reconcile current state rather than forcing an overwrite; ask for a choice if reconciliation would change the person's intent.
 

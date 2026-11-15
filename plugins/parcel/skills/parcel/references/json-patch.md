@@ -1,6 +1,6 @@
 # Edit saved resources with JSON Patch
 
-Use this reference when the discovered operation accepts RFC 6902 JSON Patch. Follow that operation's current schema for its target, writable resource, limits and prerequisites. Do not send Patch to an operation that advertises another contract. Create and delete operations remain separate where discovered; a Patch can add or remove members inside its selected resource.
+Updates to saved resources use RFC 6902 JSON Patch. Follow the discovered update schema for its target, writable resource, limits and prerequisites. Separate create and delete operations manage resources where provided; a Patch can add or remove members inside its selected resource.
 
 ## Establish the working copy
 
