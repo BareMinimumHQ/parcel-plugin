@@ -55,7 +55,7 @@ server with those candidate skills through Codex or Claude Code, recording both
 commits and the observed results in the private delivery record. Follow the
 [paired release gate](https://github.com/thesimonho/parcel/blob/main/docs/plugin-distribution/workflow-contracts.md#coordinated-staging-gate):
 promote the verified app first, then merge and release the tested plugin
-candidate through Release Please. Provider review and installation are separate;
+candidate through Release Please. Verify each new writer together with its required readers and saved-state tokens before changing provider discovery. Providers can accept changed tools separately; a package release does not establish an atomic switch. Keep supported old callbacks until explicit retirement approval. Provider review and installation are separate;
 do not replace pending provider connections to perform this gate.
 
 ## Claude submission
