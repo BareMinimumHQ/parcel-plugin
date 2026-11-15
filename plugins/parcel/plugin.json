@@ -4,7 +4,7 @@
   "version": "1.2.0",
   "description": "Parcel keeps your job search organized, from identifying promising roles to preparing for interviews. Bring your career profile, opportunities, tailored resumes, cover letters, and preparation together in one place. Work with your preferred assistant to compare roles, prepare stronger applications, and pick up where you left off—with your saved work ready for the next step.",
   "author": {
-    "name": "Simon Ho",
+    "name": "Bare Minimum",
     "email": "contact@workinparcel.com",
     "url": "https://workinparcel.com/"
   },
@@ -75,7 +75,7 @@
         "displayName": "Parcel",
         "shortDescription": "Organize your job search.",
         "longDescription": "Parcel keeps your job search organized, from identifying promising roles to preparing for interviews. Bring your career profile, opportunities, tailored resumes, cover letters, and preparation together in one place. Work with your preferred assistant to compare roles, prepare stronger applications, and pick up where you left off—with your saved work ready for the next step.",
-        "developerName": "Simon Ho",
+        "developerName": "Bare Minimum",
         "category": "Productivity",
         "capabilities": [
           "Organize jobs",
