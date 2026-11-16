@@ -4,7 +4,7 @@ Identify the requested Account or Job information and use its current discovered
 
 ## PDFs and focused edits
 
-Save an attached PDF as an Account Resume when requested; providing a source for another task is not permission to store or replace it. This stores the original PDF, not extracted editable content. Follow the host-supported transfer path or offer website upload. A prepared transfer is not a saved Resume.
+When a person supplies a PDF as a source, extract its readable content with supported host capabilities and propose structured, editable content under the shared evidence and save rules. Explain extraction gaps and ask for missing material. Providing a source does not authorize saving or replacing it. If they want to store the original PDF, direct them to the website upload. An existing saved PDF may be copied through a supported document capability when authorized; this does not turn it into editable content.
 
 Describe document changes in terms of sections, fields, items, values and order. Preserve current identities when relabeling or editing saved content; Parcel constructs new records. Adding, moving, copying, clearing and deleting have different effects. In particular, deleting a populated field can discard valuable content, while a missing value does not mean “clear it.” Ensure those effects match the authorized request.
 
@@ -22,6 +22,6 @@ Saving these settings guides future preparation without rewriting documents or c
 
 Requirements describe objective assessment inputs; Priorities describe weighted subjective outcomes. Optional Search records discovery direction such as titles, industries, companies, company sizes, posting age, desired work and screening guidance. Search does not create Match Filters, scores or readiness rules.
 
-Read complete current preferences before an authorized change. Omitted sections retain saved content; supplied sections replace their complete content, and explicit empty sections clear them. Preserve unrelated details within replacements, including Priority identities and weights. Task-specific exceptions do not become permanent preferences without authorization.
+Read complete current preferences before an authorized change. Use the discovered update semantics; unaddressed values stay unchanged. Replacing a section supplies its complete intended value, so preserve unrelated details and clear values only as the selected schema permits. Preserve unrelated details within replacements, including Priority identities and weights. Task-specific exceptions do not become permanent preferences without authorization.
 
 Missing Search direction does not block capturing a supplied posting. For opportunity selection, use [discover opportunities](discover-opportunities.md) and ask only for essential missing direction.

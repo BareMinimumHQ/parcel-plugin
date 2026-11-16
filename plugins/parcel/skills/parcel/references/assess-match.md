@@ -1,6 +1,8 @@
 # Assess a Match
 
-Read the Job, Saved Job Posting, Job Preferences and current Match. Explain missing posting or meaningful preferences before scoring. An existing Match uses captured posting and preference snapshots; assess those sources and explain changed-source indicators before an authorized rebase.
+Read the Job, Saved Job Posting, Job Preferences and current Match with its captured inputs. Explain missing posting or meaningful preferences before scoring. A saved Match describes the posting and criteria it captured. Explain changed-source warnings and distinguish those earlier criteria from current preferences when discussing saved scores.
+
+When asked to rerun or refresh Match, reassess the complete comparison against the intended current inputs. A retained Priority ID does not establish that its meaning is unchanged. Review every configured Requirement and Priority and save a complete assessment; do not carry scores forward because their IDs still exist. Follow the current supported reassessment workflow if an older action reports that it is retired.
 
 Assess configured Requirement Filters against explicit posting evidence using supported outcomes. Distinguish no match, not stated and unclear, with a concise explanation of material uncertainty. Missing salary is unknown, not a confirmed failure; stricter screening depends on the person's explicit policy.
 
@@ -14,6 +16,6 @@ Assess Experience separately using relevant Career Profile or Resume evidence. W
 - **Hard gap:** A confirmed missing required capability with no supported equivalent. Identify the requirement and evidence establishing the gap.
 - **Unconfirmed:** Insufficient evidence; state what needs confirmation. An omitted profile skill does not establish a Hard gap.
 
-Experience does not affect Estimated Match. Empty fields mean no saved assessment, not no overlap or gaps. Experience can be assessed independently of preference scores. A preference rebase retains Experience; reconsider its evidence separately, since Career Profile edits do not supply a stale indicator.
+Experience does not affect Estimated Match. Empty fields mean no saved assessment, not no overlap or gaps. Experience can be assessed independently of preference scores. Review its evidence during reassessment; Career Profile edits do not supply a stale indicator. Existing text can remain when that review supports it.
 
-Present the assessment and evidence. Preserve unrelated assessments and Experience during focused changes; source rebasing or clearing saved work must be deliberate.
+Present the assessment and evidence. Preserve unrelated assessments, Experience and captured sources during focused changes. An ordinary edit does not clear an outdated-source warning; adopting different assessment inputs or clearing saved work must be deliberate.

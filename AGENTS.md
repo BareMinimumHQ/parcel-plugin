@@ -4,7 +4,7 @@ When a change affects a shared Agent workflow, review the relevant plugin guidan
 
 Treat the agent interface as an evolving public contract. New capabilities and compatible additions are welcome; preserve existing calls and their meaning where possible.
 
-Assess cross-repository effects when relevant and update both repositories when a working change requires it. Independent changes use the normal checks for their repository.
+Assess cross-repository effects when relevant and update both repositories when a working change requires it. Independent changes use the normal checks for their repository. Before declaring an MCP change dependent on a new package, test the currently released skills unchanged against the complete staging catalog. Tool renames or consolidation alone do not require new guidance when the existing outcomes remain achievable. Keep this evidence separate from provider scan timing; hidden compatibility callbacks preserve calls without adding definitions to discovery.
 
 For incompatible changes, identify the affected workflows and coordinate delivery so supported packages remain usable; do not assume tool discovery immediately refreshes every installed package or provider-held definition.
 

@@ -55,8 +55,24 @@ server with those candidate skills through Codex or Claude Code, recording both
 commits and the observed results in the private delivery record. Follow the
 [paired release gate](https://github.com/thesimonho/parcel/blob/main/docs/plugin-distribution/workflow-contracts.md#coordinated-staging-gate):
 promote the verified app first, then merge and release the tested plugin
-candidate through Release Please. Provider review and installation are separate;
-do not replace pending provider connections to perform this gate.
+candidate through Release Please. When MCP definitions change, also test the
+currently released skills unchanged against the complete staging catalog. Let the
+agent use discovery for current call mechanics. Record each package identity and
+the workflows exercised; tool renames or consolidation alone do not establish a
+dependency on a new skill package.
+
+Supported old callbacks can remain callable while absent from discovery. They
+add no definitions to the discovery payload and do not require advertising both
+catalogs. Keep the measured discovery byte limits: oversized catalogs have caused
+silent host truncation. Keep supported callbacks until explicit retirement
+approval.
+
+Providers can accept tool changes separately. Verify required readers and
+saved-state tokens for partial catalogs separately from compatibility with a
+complete catalog. OpenAI ZIP skill scanning and MCP scanning are separate; a
+completed MCP scan is a package-submission gate, not proof of an atomic package
+and tool switch. Provider review and installation remain separate evidence; do
+not replace pending provider connections to perform this gate.
 
 ## Claude submission
 
