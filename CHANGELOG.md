@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/BareMinimumHQ/parcel-plugin/compare/v1.2.0...v1.3.0) (2026-11-16)
+
+
+### Features
+
+* simplify resource editing ([5b9d2fc](https://github.com/BareMinimumHQ/parcel-plugin/commit/5b9d2fc8f64a53e9770ae20b9cf455e4ad2d3b1d))
+
 ## [1.2.0](https://github.com/BareMinimumHQ/parcel-plugin/compare/v1.1.4...v1.2.0) (2026-11-13)
 
 
