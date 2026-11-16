@@ -71,8 +71,16 @@ Providers can accept tool changes separately. Verify required readers and
 saved-state tokens for partial catalogs separately from compatibility with a
 complete catalog. OpenAI ZIP skill scanning and MCP scanning are separate; a
 completed MCP scan is a package-submission gate, not proof of an atomic package
-and tool switch. Provider review and installation remain separate evidence; do
-not replace pending provider connections to perform this gate.
+and tool switch. Parcel has observed replacement MCP tools marked Published
+while the publicly listed skill package remained on its previous version. The
+package Publish button is not an MCP activation gate for updates to an already
+published plugin. Inspect tool availability
+and the displayed cached/live definitions separately from package publication;
+for reused names, verify the changed schema. An existing chat can still expose
+older definitions afterward, so its inventory does not establish global tool
+availability or a refresh deadline. Provider review, per-chat exposure and
+installation remain separate evidence; do not replace pending provider
+connections to perform this gate.
 
 ## Claude submission
 
