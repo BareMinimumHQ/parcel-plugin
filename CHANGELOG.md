@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.1](https://github.com/BareMinimumHQ/parcel-plugin/compare/v1.3.0...v1.3.1) (2026-11-16)
+
+
+### Documentation
+
+* clarify MCP publication ([38946bd](https://github.com/BareMinimumHQ/parcel-plugin/commit/38946bd73a44cb055a64848a71b5fe7608b0f8df))
+
 ## [1.3.0](https://github.com/BareMinimumHQ/parcel-plugin/compare/v1.2.0...v1.3.0) (2026-11-16)
 
 
