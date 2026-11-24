@@ -12,4 +12,4 @@ Show material changes and open questions for review, including the basis for a c
 
 Use the shared draft-rendering loop to check length before an authorized save. Saved content and unsaved proposals use the same document renderer; a prepared PDF address alone is not evidence of rendering or fit.
 
-Treat the requested page count as a content budget. Use the space well for relevant, supported evidence without padding. Check for excessive cuts, large unused areas and a sparse final page; page count alone does not establish a well-fitted Resume.
+Treat the requested page count as a content budget, not just a ceiling. If the preview has a large unused area (for example, the bottom quarter of a one-page Resume) or a sparse last page, revisit what you cut. Add back the strongest relevant, supported accomplishment, result or concrete detail that fits, then render again. Use as much of the budget as useful evidence warrants. Keep the existing appearance, readability and normal margins. Leave space if the only alternatives are filler, repetition or unsupported claims. Page count alone does not establish a well-fitted Resume.
