@@ -6,10 +6,10 @@ For a new Job Resume with no established starting point, look up reusable Accoun
 
 Preserve useful existing Job Resume content when revising. Account and Job Resumes are independent; tailoring a Job Resume must preserve its reusable source. Copying over saved Job work or replacing an uploaded PDF is a material replacement: make its effect clear and ensure it is authorized. Uploaded PDFs are immutable content, not editable fields.
 
+Treat the page count as a content budget, not just a ceiling. Aim to fill the available page space with as much application-relevant content as possible. Prioritize relevance and strength of evidence.
+
 Select the strongest supported connections to the role, with concrete experience, outcomes and relevance. Keep the actual technologies and scope when showing transferable capability. Explain material gaps and ask for missing evidence. Develop a focused content proposal rather than repeating every keyword or imposing a fixed number of connections.
 
 Show material changes and open questions for review, including the basis for a creation or copy.
 
 Use the shared draft-rendering loop to check length before an authorized save. Saved content and unsaved proposals use the same document renderer; a prepared PDF address alone is not evidence of rendering or fit.
-
-Treat the requested page count as a content budget, not just a ceiling. If the preview has a large unused area (for example, the bottom quarter of a one-page Resume) or a sparse last page, revisit what you cut. Add back the strongest relevant, supported accomplishment, result or concrete detail that fits, then render again. Use as much of the budget as useful evidence warrants. Keep the existing appearance, readability and normal margins. Leave space if the only alternatives are filler, repetition or unsupported claims. Page count alone does not establish a well-fitted Resume.
