@@ -1,13 +1,11 @@
 # Company research for a Job
 
-Read the Job, Posting and complete saved Company research; use relevant Profile or Resume context to focus the investigation where useful.
+Identify the employer from the Job and read its complete saved Company research. Read the Posting only if you need it to identify the right organization.
 
-Begin with a sourced overview of the hiring organization, distinguishing parents, brands or products when relevant. Explain its offering, customers, business model, stage, major milestones or pivots, and current direction where sources support them. Then connect relevant products, customers, technical areas or strategic changes to the specific role.
+Explain who the company is, what it does, what it sells, who it serves, and how its business works. Cover material recent news, announcements, product developments, and changes in strategy or direction. Include company developments that might open opportunities for an applicant, without speculating about the opening or the person's fit.
 
-Prefer primary company, product, engineering, investor and leadership sources. Use independent reporting for material context or corroboration. Favor recent evidence for current developments and older sources for history; check event dates as well as publication dates. Link material claims to descriptive sources and separate confirmed facts, role-relevance inferences and important unknowns. Use accessible sources without claiming Parcel verified them.
+Prefer primary company, product, engineering, investor and leadership sources. Use independent reporting for material context or corroboration. Favor recent evidence for current developments and older sources for history. Check event dates as well as publication dates, link material claims to descriptive sources, and state material limits of the evidence plainly. Use accessible sources without claiming Parcel verified them.
 
 Propose concise ordered sections and items with Low, Medium or High Priority. Update superseded information and combine duplicates while retaining useful research, especially when a lookup fails.
 
-Before saving, check every proposed item title and body, including items carried forward in a revision. Keep employer or role facts, supported inferences and material unknowns in declarative language. Move questions to ask, screening prompts, interview strategy, scripts and answers to Talking Points only when Interview preparation is in scope. Put comparisons to the person's location, compensation or other requirements in Match when that work is in scope. Do not create extra saved work just to move content.
-
-For example, save “The posting lists Toronto and the UK. It does not specify whether candidates in British Columbia are eligible.” Do not add “Ask the recruiter about Vancouver first.” Save the success measures the employer states and label any material gaps. Do not add a list of hypothetical KPIs to validate in screening.
+Before saving, check that each proposed title and item makes sense as factual company context without the Job description. Keep questions, recruiter prompts, and interview preparation out of this section. Leave Job description analysis, personal fit and interview work to their own stages when requested.
