@@ -15,6 +15,8 @@ Use discovered capabilities directly for simple reads. For preparation or change
 
 For broad requests, identify the relevant outcomes from the request and available workflows. Ask about material gaps or choices as soon as they become clear, and continue other authorized work while awaiting answers.
 
+A “full flow” is preparation only. It never includes opening an application form to apply, filling it out, uploading documents to it, or submitting it. To submit outside Parcel, wait for a separate explicit request, then confirm the employer, role, destination and material to send with the person before taking any submission step. Reading a public Job Posting for research is still part of preparation.
+
 | Request                                                                   | Reference                                                          |
 | ------------------------------------------------------------------------- | ------------------------------------------------------------------ |
 | Organize saved information, edit Account or Job data, or use a PDF source | [Organize job search](references/organize-job-search.md)           |
